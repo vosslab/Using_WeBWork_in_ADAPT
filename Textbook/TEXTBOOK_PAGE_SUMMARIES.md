@@ -17,8 +17,10 @@ Prefer tags that make the page easy to find by its unique topic, rather than rep
   SEO tags: answer checking, interaction patterns, problem features
 - `Textbook/01_Introduction/1.4-Comparing_WeBWorK_to_other_formats.html`: Compares WeBWorK to other automated assessment formats so you can choose an appropriate tool. After finishing, you can recognize when robust parsing and algorithmic variants are worth the setup cost. Use it when deciding between WeBWorK and a simpler, more portable question pattern.
   SEO tags: H5P comparison, LMS question banks, portability tradeoffs
-- `Textbook/01_Introduction/1.5-Quickstart_copy_edit_first_problem.html`: Walks you through a fast first win by copy-editing a complete PGML-first problem. After finishing, you can take a working template and make small changes without breaking grading. Use it when you want to move from reading to shipping your first working item, and if ADAPT reports only a generic error, use Chapter 7 to get a line-level error.
-  SEO tags: copy-edit workflow, first problem, safe edits
+- `Textbook/01_Introduction/1.5-Common_terms_and_names.html`: Defines the small set of terms that show up constantly in this book, including PG, PGML, macros, MathObjects, Context, seed, and the ADAPT names you will see in the interface. After finishing, you can read the later chapters without guessing what a term means or where it shows up in a problem file or workflow. Use it as a quick reference when you hit unfamiliar vocabulary, and link out to the broader LibreTexts terminology glossary when you need platform-wide definitions.
+  SEO tags: PG vs PGML, WeBWorK terminology, ADAPT terms
+- `Textbook/01_Introduction/1.6-Quickstart_copy_edit_first_problem.html`: Walks you through a fast first win by copy-editing a complete PGML-first problem. After finishing, you can take a working template and make small changes without breaking grading. Use it when you want to move from reading to shipping your first working item, and when ADAPT reports only a generic error, use Chapter 7 to get a line-level error.
+  SEO tags: copy-edit workflow, first problem, line-level debugging
 
 ## Chapter 2: Problem Generation (PG)
 - `Textbook/02_Problem_Generation_PG/2.0-Index.html`: Sets expectations that regular PG is discouraged and treated as scaffolding for PGML. After finishing, you can keep setup code focused and put student-facing text where it belongs in the PGML block. Use it to keep your problems short, readable, and consistent.
@@ -51,20 +53,20 @@ Prefer tags that make the page easy to find by its unique topic, rather than rep
   SEO tags: command substitution, helper-generated output, no links
 
 ## Chapter 4: Breaking Down the Components of a WeBWorK Problem
-- `Textbook/04_Breaking_Down_the_Components/4.0-Index.html`: Introduces the deep-dive example and shows how the chapter maps onto the four core sections of a WeBWorK problem file. After finishing, you can locate the preamble, setup, statement, and solution quickly and understand what each section controls. Use it as your roadmap before editing the example for your own course.
-  SEO tags: problem anatomy, annotated example, deep dive
-- `Textbook/04_Breaking_Down_the_Components/4.1-Full_file.html`: Presents the complete worked example in one place so you can see the full flow before zooming in on each section. After finishing, you can trace how values are defined, displayed, and graded without jumping between pages. Use it as a reference copy while editing or debugging.
-  SEO tags: full .pg file, reference copy, end-to-end example
-- `Textbook/04_Breaking_Down_the_Components/4.2-Preamble.html`: Walks through the preamble and `loadMacros()` choices used in the example and explains what is required versus optional. After finishing, you can remove unneeded macros safely and recognize which ones enable the interaction you picked. Use it when simplifying an inherited file or adapting the example to a new question type.
-  SEO tags: preamble, loadMacros, macro selection
-- `Textbook/04_Breaking_Down_the_Components/4.3-Setup.html`: Explains how the example defines values, sets ranges, and avoids variants that break meaning. After finishing, you can adjust ranges and constraints while keeping the story and grading stable, then reproduce variants by setting a seed. Use it when converting a fixed-number lab question into a randomized bank item, and test variants locally with Chapter 7 when ADAPT gives only a generic error.
-  SEO tags: setup block, safe randomization, value constraints
-- `Textbook/04_Breaking_Down_the_Components/4.4-Statement.html`: Breaks down the PGML statement, showing how text, math, tables or lists, and blanks stay readable together. After finishing, you can add, remove, or reorder blanks without losing track of which answer matches which prompt. Use it when building multi-part life science prompts where alignment and clarity matter.
-  SEO tags: PGML statement, answer blanks, prompt clarity
-- `Textbook/04_Breaking_Down_the_Components/4.5-Solution.html`: Shows how the solution block explains the work and how quick checks can catch common student inputs. After finishing, you can write short solutions that match the grading rules and add lightweight checks that prevent avoidable disputes. Use it as your pattern for writing solutions that are helpful without being verbose.
-  SEO tags: solution block, feedback, grading checks
-- `Textbook/04_Breaking_Down_the_Components/4.6-Putting_it_together.html`: Walks through the example file from top to bottom and shows how the four sections work together as a single, readable unit. After finishing, you can make a small change in each section without losing track of what controls display versus grading. Use it as the "first edit loop" page before cloning the file into your own bank and testing a few fixed seeds.
-  SEO tags: edit loop, file walkthrough, reproducible variants
+- `Textbook/04_Breaking_Down_the_Components/4.0-Index.html`: Explains that Chapter 4 is a single worked problem sliced into Preamble, Setup, Statement, Solution, plus a Put it together workflow page. After finishing, you can use the section map and anatomy tables to locate where edits belong and what usually breaks. Use it as the navigation page before you touch the full file and when ADAPT errors need a quick local render pointer to Chapter 7.
+  SEO tags: section map, problem anatomy, workflow roadmap
+- `Textbook/04_Breaking_Down_the_Components/4.1-Full_file.html`: Shows the full reference .pg file with color-coded section markers and a short anchor map. After finishing, you can scan the entire flow and confirm which section contains a change you just made. Use it as a reference copy after you edit in 4.2 to 4.5, not as the first editing target.
+  SEO tags: full .pg file, anchor map, reference copy
+- `Textbook/04_Breaking_Down_the_Components/4.2-Preamble.html`: Focuses on the Preamble as the macro-loading layer and points to official choice and MultiAnswer patterns by name. After finishing, you can choose the right macros, avoid deprecated PopUp usage, and recognize when a missing macro causes a render failure. Use it when adding a new interaction type or cleaning up a legacy macro list.
+  SEO tags: preamble, macro selection, PGchoicemacros
+- `Textbook/04_Breaking_Down_the_Components/4.3-Setup.html`: Covers Setup as the place for variables, constraints, computed targets, and tolerance decisions. After finishing, you can set biologically plausible ranges, keep units consistent, and apply the NumericalTolerance-style options in the right place. Use it when adjusting randomization, grading strictness, or answer formatting before you touch the prompt text.
+  SEO tags: setup block, tolerance patterns, unit consistency
+- `Textbook/04_Breaking_Down_the_Components/4.4-Statement.html`: Breaks down the Statement as PGML text plus blanks, with a blanks map and structure patterns table. After finishing, you can align each blank with its answer object and choose the right structure (paragraphs, lists, tables, inline math) without breaking readability. Use it when rewriting the story or adding choice-based inserts that follow the OpenWeBWorK technique samples.
+  SEO tags: PGML statement, blanks map, structure patterns
+- `Textbook/04_Breaking_Down_the_Components/4.5-Solution.html`: Explains the Solution as a short, trust-building explanation aligned with the checker. After finishing, you can keep the solution consistent with tolerances, units, and rounding while adding minimal feedback hooks. Use it when students or graders need clarity about the expected method and format.
+  SEO tags: solution block, grading alignment, rounding notes
+- `Textbook/04_Breaking_Down_the_Components/4.6-Putting_it_together.html`: Turns the deep dive into a repeatable edit workflow with a common-edits table and preflight checks. After finishing, you can jump to the right section first, then verify alignment before importing to ADAPT. Use it as the final workflow page when you want a fast local render option and a techniques menu for swapping interaction types.
+  SEO tags: edit workflow, preflight checklist, techniques menu
 
 ## Chapter 5: Different Question Types in WeBWorK
 - `Textbook/05_Different_Question_Types/5.0-Index.html`: Frames the chapter as a bridge between WeBWorK authoring and using WeBWorK inside ADAPT, with life-science-first examples. After finishing, you can choose between interaction patterns, workflow habits, and QA checks depending on what you are trying to ship. Use it to start Chapter 5 and pick the subsection you need next.
@@ -115,4 +117,3 @@ Prefer tags that make the page easy to find by its unique topic, rather than rep
   SEO tags: live preview editor, problemSeed, save back to file
 - `Textbook/07_Local_Testing_with_webwork_pg_renderer/7.2-Testing_habits_and_troubleshooting.html`: Focuses on a small set of checks that catch most failures, including variant sweeps, boundary values, and student-view behavior like submit controls and permission levels. After finishing, you can diagnose whether a failure is PG syntax, missing dependencies, or a rendering/UI mismatch using line number errors, logs, and the health endpoint. Use it as a repeatable first-pass QA loop before an ADAPT preview and before importing or publishing a revised problem.
   SEO tags: edge case testing, health endpoint, container logs
-
