@@ -1,0 +1,49 @@
+<p>
+A WeBWorK problem is typically stored in a file with a <code>.pg</code> extension. The file is a
+mix of:
+</p>
+<ul>
+	<li>Comments (for authors)</li>
+	<li>PG code (setup and answer checking)</li>
+	<li>PGML text blocks (the student-facing prompt)</li>
+</ul>
+
+<h2>Minimal PGML-first template</h2>
+<p>
+This template shows the intended structure: short setup, then a PGML prompt.
+</p>
+
+<pre>
+DOCUMENT();
+
+loadMacros(
+	"PGstandard.pl",
+	"MathObjects.pl",
+	"PGML.pl",
+	"PGcourse.pl",
+);
+
+Context("Numeric");
+
+$a = random(2, 8, 1);
+$b = random(3, 9, 1);
+
+$ans = Real($a + $b);
+
+BEGIN_PGML
+In a sample, the counts were [$a] and [$b].
+
+What is the total count?
+
+[`Total = `] [________]{$ans}
+END_PGML
+
+ENDDOCUMENT();
+</pre>
+
+<h2>What to keep stable</h2>
+<ul>
+	<li>Always include <code>DOCUMENT();</code> and <code>ENDDOCUMENT();</code>.</li>
+	<li>Always load <code>PGML.pl</code> when you use <code>BEGIN_PGML</code>.</li>
+	<li>Keep setup code short and readable; your future self will thank you.</li>
+</ul>

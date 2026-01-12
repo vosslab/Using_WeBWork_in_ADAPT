@@ -1,0 +1,36 @@
+<p>
+Most WeBWorK examples describe a PG file as having several sections (description, initialization,
+setup, text, answers/solutions). That model is still useful, but when you write PGML-first, the
+roles shift:
+</p>
+
+<h2>Recommended sections (PGML-first)</h2>
+<ol>
+	<li>
+		<strong>Description / tags (optional)</strong>: comments at the top so other authors can find
+		and reuse the problem.
+	</li>
+	<li>
+		<strong>Initialization</strong>: <code>DOCUMENT();</code> and <code>loadMacros(...)</code>.
+	</li>
+	<li>
+		<strong>Setup</strong>: define variables and answers, pick a context, set tolerances.
+	</li>
+	<li>
+		<strong>Text (PGML)</strong>: the prompt between <code>BEGIN_PGML</code> and <code>END_PGML</code>.
+	</li>
+	<li>
+		<strong>Solution / hint (optional)</strong>: use <code>BEGIN_PGML_SOLUTION</code> or
+		<code>BEGIN_PGML_HINT</code> when you want a structured solution.
+	</li>
+	<li>
+		<strong>End</strong>: <code>ENDDOCUMENT();</code>.
+	</li>
+</ol>
+
+<h2>Why answers often live inside the PGML text</h2>
+<p>
+When you attach the correct answer directly to an answer blank (for example
+<code>[______]{Real(12)}</code>), the connection between prompt and grading stays obvious. This is
+especially helpful for science prompts with multiple values and multiple parts.
+</p>

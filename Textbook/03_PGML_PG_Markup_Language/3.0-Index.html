@@ -1,0 +1,103 @@
+<p>
+PGML (PG Markup Language) is the recommended way to write the student-facing text of a WeBWorK
+problem. It is designed to replace older authoring patterns that required long blocks of text and
+manual escaping.
+</p>
+
+<p>
+This chapter is the core of the book: most science-friendly question writing can be done by
+combining a small PG setup with a clear PGML prompt.
+</p>
+
+<h2>What PGML gives you</h2>
+<ul>
+	<li>Readable prompts that look similar to the rendered output.</li>
+	<li>Math in TeX or calculator notation, with consistent delimiters.</li>
+	<li>Answer blanks that can be tied directly to answers.</li>
+	<li>Variable substitution that respects math contexts.</li>
+</ul>
+
+<h2>Math delimiters (TeX and calculator notation)</h2>
+<ul>
+	<li>TeX inline: <code>[` ... `]</code></li>
+	<li>TeX display-style inline: <code>[`` ... ``]</code></li>
+	<li>TeX display: <code>[``` ... ```]</code></li>
+	<li>Calculator inline: <code>[: ... :]</code></li>
+	<li>Calculator display-style inline: <code>[:: ... ::]</code></li>
+	<li>Calculator display: <code>[::: ... :::]</code></li>
+</ul>
+
+<h2>Variable substitution</h2>
+<p>
+Insert a variable using <code>[$a]</code>. MathObjects will usually format themselves appropriately
+depending on where they are placed (inside TeX delimiters vs. calculator delimiters vs. plain
+text).
+</p>
+
+<pre>
+BEGIN_PGML
+Suppose the concentration is [`c = [$c]`] and the volume is [`V = [$V]`].
+END_PGML
+</pre>
+
+<h2>Answer blanks (and tying answers to blanks)</h2>
+<p>
+An answer blank is written as <code>[_____]</code>. You can attach the correct answer immediately
+after the blank using braces. This keeps prompt and grading close together.
+</p>
+
+<pre>
+BEGIN_PGML
+If [:x = [$a]:], then [:x^2:] is [________]{$a**2}
+END_PGML
+</pre>
+
+<p>
+If the correct answer is a formula, use a quoted string or a Formula MathObject.
+</p>
+
+<pre>
+$f = Compute("x^2-1");
+
+BEGIN_PGML
+The parabola is [`y = `] [________________]{$f}
+END_PGML
+</pre>
+
+<h2>Escaping and processing substitutions</h2>
+<p>
+By default, substitutions are escaped so that special characters show up literally. You can
+change that behavior by adding stars after the substitution:
+</p>
+<ul>
+	<li><code>[$var]</code>: escaped substitution (safe default).</li>
+	<li><code>[$var]*</code>: direct substitution (no escaping).</li>
+	<li><code>[$var]**</code>: substitute and then process as PGML.</li>
+</ul>
+
+<h2>Tables and structured data</h2>
+<p>
+Science prompts often need a small table of values. WeBWorK provides table helpers that aim to be
+accessible and consistent across output formats. Use data tables for real data, and layout tables
+only when the table is purely for positioning.
+</p>
+
+<h2>Images and links</h2>
+<p>
+PGML does not provide a dedicated image syntax, but you can insert images or graphs using command
+substitution. Links can also be inserted using helper functions in a PG problem. Keep both
+features purposeful and minimal, and test in your target environment.
+</p>
+
+<h2>Hints and solutions</h2>
+<p>
+You can write structured hints and solutions using PGML blocks:
+</p>
+<ul>
+	<li><code>BEGIN_PGML_HINT</code> / <code>END_PGML_HINT</code></li>
+	<li><code>BEGIN_PGML_SOLUTION</code> / <code>END_PGML_SOLUTION</code></li>
+</ul>
+
+<p>
+For the rest of the book, assume "PGML first" unless a section explicitly says otherwise.
+</p>

@@ -1,0 +1,45 @@
+<p>
+Every PGML problem still needs a short PG preamble that loads the macros providing PGML,
+MathObjects, and course defaults. This page lists the small set of macro files you will use most
+often when writing PGML-first problems.
+</p>
+
+<h2>Macros you almost always load</h2>
+<ul>
+	<li><code>PGstandard.pl</code>: core PG helpers and defaults.</li>
+	<li><code>MathObjects.pl</code>: MathObjects and robust answer checking.</li>
+	<li><code>PGML.pl</code>: PGML markup (<code>BEGIN_PGML</code>, answer blanks, formatting).</li>
+	<li><code>PGcourse.pl</code>: course-level helpers and sensible defaults.</li>
+</ul>
+
+<h2>Common optional macros</h2>
+<ul>
+	<li>
+		<code>parserRadioButtons.pl</code>: radio-button answers (multiple choice with one correct).
+	</li>
+	<li>
+		<code>parserPopUp.pl</code> / <code>parserCheckbox.pl</code>: popup or checkbox style answers.
+	</li>
+	<li>
+		<code>answerHints.pl</code>: targeted feedback for common wrong answers (use sparingly).
+	</li>
+</ul>
+
+<h2>Minimal PGML-first loadMacros block</h2>
+<pre>
+DOCUMENT();
+
+loadMacros(
+	"PGstandard.pl",
+	"MathObjects.pl",
+	"PGML.pl",
+	"PGcourse.pl",
+);
+</pre>
+
+<h2>Rule of thumb</h2>
+<ul>
+	<li>Start with the minimal macro set above.</li>
+	<li>Add one extra macro only when you need a specific interaction type.</li>
+	<li>Keep the setup short; most authoring should happen in PGML.</li>
+</ul>

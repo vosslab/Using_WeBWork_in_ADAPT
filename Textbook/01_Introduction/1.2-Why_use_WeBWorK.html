@@ -1,0 +1,47 @@
+<p>
+WeBWorK is useful when you want repeated, low-friction practice with immediate feedback and
+consistent grading. In science courses, the strength is not "more math", but rather repeatable
+workflows for units, significant figures, tabular data, and numeric reasoning inside realistic
+prompts.
+</p>
+
+<h2>Reasons instructors use it</h2>
+<ul>
+	<li>Immediate feedback supports iterative learning.</li>
+	<li>Algorithmic variants reduce copying and encourage practice.</li>
+	<li>Answer checking is explicit and reproducible (tolerances, formats, partial credit patterns).</li>
+	<li>Problems are text-based and versionable (easy to clone and modify).</li>
+</ul>
+
+<h2>Why PGML matters</h2>
+<p>
+While a WeBWorK problem is "a PG file", this guide discourages writing long blocks of text in
+regular PG. PGML is designed so that the prompt reads like the rendered output, and answer blanks
+can be tied directly to answers in the same place you write the question.
+</p>
+
+<ul>
+	<li>Readable prompts with inline and display math.</li>
+	<li>Answer blanks like <code>[_____]{...}</code> that stay close to the text they grade.</li>
+	<li>Variable substitution that formats MathObjects correctly in TeX or calculator notation.</li>
+</ul>
+
+<h2>Science-friendly patterns</h2>
+<ul>
+	<li>Use a short narrative plus a table of measurements.</li>
+	<li>Ask for a computed quantity with units and controlled rounding.</li>
+	<li>Include one or two conceptual checks (multiple choice) when appropriate.</li>
+	<li>Prefer small, composable randomizations over complicated logic.</li>
+</ul>
+
+<h2>How WeBWorK compares (briefly)</h2>
+<p>
+Other systems can also deliver automated questions (for example H5P interactive content, QTI item
+banks, and LMS-native quiz questions). The main reason to choose WeBWorK in a science course is
+when you want robust answer parsing and checking (MathObjects), repeatable algorithmic variants,
+and clear, readable prompt authoring via PGML.
+</p>
+
+<p>
+For a more detailed comparison and "choose this when" guidance, see Section 1.4.
+</p>

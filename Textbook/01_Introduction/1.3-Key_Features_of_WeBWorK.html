@@ -1,0 +1,36 @@
+<p>
+WeBWorK's power is not a single feature, but a stable combination: algorithmic question setup,
+structured answer checking, and readable authoring of the student prompt.
+</p>
+
+<h2>Core features (author view)</h2>
+<ul>
+	<li>
+		PGML for prompt authoring (recommended): readable markup, math delimiters, and answer blanks.
+	</li>
+	<li>
+		MathObjects for robust parsing and checking of student answers (numeric, formulas, lists).
+	</li>
+	<li>
+		Randomization primitives (e.g., <code>random()</code>) to generate variants while keeping the
+		scoring rules identical.
+	</li>
+	<li>
+		Multiple answer interaction types via macros (numeric answers, formulas, radio buttons, etc.).
+	</li>
+</ul>
+
+<h2>Core features (student view)</h2>
+<ul>
+	<li>Immediate feedback on correctness.</li>
+	<li>Consistent formatting for mathematical expressions.</li>
+	<li>Hints and solutions when enabled by the instructor.</li>
+</ul>
+
+<h2>Features that matter in sciences</h2>
+<ul>
+	<li>Prompts that mix words, values, and math without fragile escaping.</li>
+	<li>Tables for measurement data (use table helpers rather than layout hacks).</li>
+	<li>Clean embedding of images/figures when needed (via command substitution).</li>
+	<li>Links to external references or built-in help links when appropriate.</li>
+</ul>

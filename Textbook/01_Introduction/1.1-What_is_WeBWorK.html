@@ -1,1 +1,37 @@
-<p>The name "WeBWorK" is derived from the combination of "Web" and "Homework." It reflects the system's primary function of delivering and managing homework assignments over the web. The project started in the mid-1990s at the University of Rochester by Professors Arnold Pizer and Michael Gage, who aimed to create a system that would help students learn and practice mathematical problems more effectively through immediate feedback and online accessibility.</p>
+<p>
+The name "WeBWorK" is derived from the combination of "Web" and "Homework." It reflects the
+system's primary function of delivering and managing homework assignments over the web. The
+project started in the mid-1990s at the University of Rochester.
+</p>
+
+<p>
+In practice, WeBWorK is a system for delivering automatically graded questions where the student
+experience is a web page and the author experience is a text-based problem file (usually a
+<code>.pg</code> file). A problem can randomize values, format mathematical content, collect student
+answers, and grade them immediately.
+</p>
+
+<h2>PGML-first authoring</h2>
+<p>
+WeBWorK problems are written in a language called PG, but most authors should treat "regular PG"
+as the plumbing that sets up variables and answer checkers. The student-facing prompt should be
+written in PGML (PG Markup Language), which is designed to replace older <code>BEGIN_TEXT</code>
+authoring.
+</p>
+
+<ul>
+	<li>
+		PG (minimal): load macros, choose contexts, define random values, and build MathObjects.
+	</li>
+	<li>
+		PGML (primary): write the prompt, math, tables, and answer blanks using readable markup.
+	</li>
+</ul>
+
+<h2>Why it works well for sciences</h2>
+<ul>
+	<li>Short prompts with structured data (tables, values, units).</li>
+	<li>Algorithmic variants for repeated practice without reusing the same numbers.</li>
+	<li>Clear answer checking via MathObjects (numeric, formula, list, multiple choice).</li>
+	<li>Consistent formatting for math and variables inside the prompt via PGML substitutions.</li>
+</ul>

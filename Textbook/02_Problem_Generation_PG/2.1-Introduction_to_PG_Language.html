@@ -1,0 +1,34 @@
+<p>
+PG is the language used to define WeBWorK problems. It is implemented in Perl and uses macros to
+provide features like answer checking, randomization, and formatting.
+</p>
+
+<p>
+This guide discourages writing long prompts in "regular PG". Instead, treat PG as the setup layer
+and write the student-facing prompt in PGML.
+</p>
+
+<h2>The minimum PG you need</h2>
+<ul>
+	<li><code>DOCUMENT();</code> at the top of the file.</li>
+	<li><code>loadMacros(...);</code> including <code>PGML.pl</code> and MathObjects.</li>
+	<li>A small setup block: random values, computed answers, and answer checkers.</li>
+	<li>A PGML text block between <code>BEGIN_PGML</code> and <code>END_PGML</code>.</li>
+	<li><code>ENDDOCUMENT();</code> at the end of the file.</li>
+</ul>
+
+<h2>How much Perl do I need to know?</h2>
+<p>
+Usually: a little. Most problems only need a few scalar variables (like <code>$a</code>,
+<code>$b</code>) and a few MathObjects created with <code>Compute()</code> or <code>Real()</code>.
+If you keep your setup small and your prompt in PGML, you can author effectively without learning
+advanced Perl patterns.
+</p>
+
+<h2>A mindset for science problems</h2>
+<ul>
+	<li>Randomize the values, not the story.</li>
+	<li>Keep units explicit and consistent.</li>
+	<li>Prefer one or two answer blanks with clear interpretation.</li>
+	<li>When you need a table or structured layout, reach for PGML helpers rather than ad-hoc HTML.</li>
+</ul>
