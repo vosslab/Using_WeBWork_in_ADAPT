@@ -1,74 +1,64 @@
-# Plan
+# Writing Automated Questions using WeBWorK in ADAPT
 
-This README is the working plan for expanding the chapter-based guide in `Textbook/` using
-source material from `Insight-HTML/` and `WebWorK-HTML/`. The guide stays focused on science
-and descriptive fields, reflecting Neil Voss's emphasis on applied domains.
+This repository is a chapter-based textbook/guide (not a traditional software project). The
+primary content lives in `Textbook/` as LibreTexts-ready HTML and is written for an audience in
+the sciences and descriptive fields, with life-science-first examples.
 
-## Requirements
-- Use `Insight-HTML/` and `WebWorK-HTML/` as source material only; do not modify the archives.
-- Expand the chapter structure inside `Textbook/` rather than inventing new top-level folders.
-- Keep the tone and examples focused on science and descriptive fields.
-- Maintain HTML pages as the primary chapter format.
-- Record edits in `docs/CHANGELOG.md`.
+The guide is PGML-first: regular PG is treated as minimal scaffolding, and most authoring effort
+should go into clear, structured PGML prompts.
 
-## Scope
-- In: add chapter index content, create or expand subchapter HTML files, and include worked
-  examples and checklists.
-- Out: reorganizing the source archives, creating new platforms, or rewriting the guide as a
-  different format.
+## Repository layout
+- `Textbook/`: the book content (HTML), organized by chapter folders.
+- `Insight-HTML/` and `WebWorK-HTML/`: extracted source material used for writing (do not edit).
+- `docs/`: repo conventions and HTML authoring rules.
+- `tools/`: authoring utilities (for example, linting/formatters).
+- `tests/`: local checks (HTML lint, Python checks).
 
-## Files and entry points
+## Entry points
 - `Textbook/01_Introduction/1.0-Index.html`
-- `Textbook/01_Introduction/1.5-Quickstart_copy_edit_first_problem.html`
 - `Textbook/02_Problem_Generation_PG/2.0-Index.html`
 - `Textbook/03_PGML_PG_Markup_Language/3.0-Index.html`
 - `Textbook/04_Simple_Problem_Example_in_WeBWorK/4.0-Index.html`
 - `Textbook/05_Question_Types/5.0-Index.html`
 - `Textbook/06_WeBWorK_for_Different_Subjects/6.0-Index.html`
-- `Textbook/07_ADAPT_Workflow/7.0-Index.html`
-- `Textbook/08_Debugging_and_QA/8.0-Index.html`
-- `Textbook/09_Randomization_and_Reproducibility/9.0-Index.html`
-- `Textbook/10_Answer_Checking_for_Science/10.0-Index.html`
-- `Textbook/11_Accessibility_and_Clarity/11.0-Index.html`
-- `Textbook/12_Maintenance_and_Sharing/12.0-Index.html`
 - `Textbook/90_Appendices/90.0-Index.html`
-- `Insight-HTML/`
-- `WebWorK-HTML/`
-- `docs/CHANGELOG.md`
 
-## Chapter expansion map
-- 01 Introduction: WeBWorK overview, why use it in sciences, key features, and how ADAPT fits.
-- 02 Problem generation (PG): PG file structure, common macros, randomization, and contexts.
-- 03 PGML: syntax, formatting, answer blanks, math notation, tables, images, and links.
-- 04 Simple example: end-to-end walkthrough with PG and PGML for a science-flavored question.
-- 05 Question types: design patterns (MC, matching, numeric entry, blanks, ordering).
-- 06 Different subjects: domain patterns, pitfalls, and examples (biology, chemistry, etc.).
-- 07 ADAPT workflow: authoring, cloning, assignment building, QA, and publishing.
-- 08 Debugging and QA: previewing, error patterns, variant testing, and student-view pitfalls.
-- 09 Randomization and reproducibility: seeds, constraints, and stable reporting rules.
-- 10 Answer checking for science: tolerances, units, reporting conventions, misconceptions.
-- 11 Accessibility and clarity: ESL-friendly prompts, ambiguity traps, basic accessibility.
-- 12 Maintenance and sharing: naming, reuse across terms, versioning, licensing hygiene.
-- 90 Appendices: templates, cheat sheets, glossary, troubleshooting.
+## Chapter map (current)
+- 01 Introduction: audience, framing, and why WeBWorK is useful in science courses.
+- 02 Minimal PG scaffolding: `.pg` structure, macro loading, and keeping setup small.
+- 03 PGML: the core authoring layer (blanks, lists, tables, and a small “escape hatch”).
+- 04 Worked example: a complete copy-and-edit PGML-first life-science problem.
+- 05 ADAPT workflow and question types: interaction patterns plus workflow habits and QA checks.
+- 06 Different subjects: biology-first pattern catalog and subject adaptations.
+- 90 Appendices: templates, cheat sheets, glossary, troubleshooting, and “further techniques”.
 
-## Action items
-[ ] Audit `Insight-HTML/` and `WebWorK-HTML/` for the best source pages per chapter.
-[ ] Draft or expand each chapter index with a short intro and a section outline.
-[ ] Create subchapter HTML files for new sections, using consistent naming and numbering.
-[ ] Add worked examples and checklists that prioritize science and descriptive contexts.
-[ ] Avoid HTML links in textbook content (LibreTexts provides its own TOC).
-[ ] Review for tone, clarity, and consistency with the chapter progression.
+## LibreTexts authoring rules (high importance)
+This repo assumes LibreTexts import and LibreTexts navigation:
+- Avoid HTML links (`<a href=...>`) in `Textbook/` content (LibreTexts provides its own TOC).
+- Do not rely on JavaScript (`<script>` tags or inline event handlers).
+- Every chapter index file named `X.0-Index.html` must end with `<p>{{template.ShowOrg()}}</p>`.
+- Table format and other HTML conventions are documented in `docs/LIBRETEXTS_HTML_GUIDE.md`.
 
-## Testing and validation
-- Open a sample of updated HTML files in a browser to confirm formatting and rendering.
-- Verify chapter numbering and file naming consistency across `Textbook/`.
-- Run `tests/run_html_lint.sh`.
+## Editing workflow
+1. Edit or add chapter content in `Textbook/` (HTML).
+2. Keep examples life-science-first and PGML-first (PG setup only as needed).
+3. Update `Textbook/TEXTBOOK_PAGE_SUMMARIES.md` for any new/renamed pages.
+4. Record your change in `docs/CHANGELOG.md`.
 
-## Risks and edge cases
-- Source content may conflict across Insight and WebWorK pages; resolve with a clear stance.
-- Overemphasis on math examples can dilute the science focus.
-- Licensing references must remain accurate when quoting or adapting content.
+## Validation
+Run the local lint checks before considering HTML “done”:
+```bash
+/opt/homebrew/bin/bash tests/run_html_lint.sh
+/opt/homebrew/bin/bash tests/run_pyflakes.sh
+```
 
-## Open questions
-- Do you want each chapter to end with a short summary and exercises section?
-- Should examples favor biology and chemistry first, or be evenly distributed by field?
+## Source material (do not edit)
+The extracted HTML in `Insight-HTML/` and `WebWorK-HTML/` is used as writing input. The textbook
+content should integrate the useful ideas as prose and examples, not as copied pages.
+
+## Example style reference (local)
+If available on the same machine, use the Biology Problems OER style as a content and prompt
+reference:
+- `/Users/vosslab/nsh/biology-problems/`
+- `/Users/vosslab/nsh/biology-problems-website/`
+

@@ -1,0 +1,46 @@
+<p>
+This quickstart is designed to give you a complete win early: take a working PGML-first problem,
+copy it, and make a small edit that still grades correctly.
+</p>
+
+<h2>Quickstart steps</h2>
+<ol>
+	<li>Copy a working template problem (start from Chapter 4 if you have one available).</li>
+	<li>Change only the story text first, keeping the variable names and math intact.</li>
+	<li>Preview multiple variants to confirm the prompt still makes sense.</li>
+	<li>Then change the numbers or the formula, one small change at a time.</li>
+</ol>
+
+<h2>A minimal PGML-first skeleton (for copy-editing)</h2>
+<pre>
+DOCUMENT();
+
+loadMacros(
+	"PGstandard.pl",
+	"MathObjects.pl",
+	"PGML.pl",
+	"PGcourse.pl",
+);
+
+Context("Numeric");
+
+$a = random(2, 8, 1);
+$b = random(3, 9, 1);
+$ans = Real($a + $b);
+
+BEGIN_PGML
+In a lab notebook, two counts were recorded: [$a] and [$b].
+
+What is the total count?
+
+[`Total = `] [________]{$ans}
+END_PGML
+
+ENDDOCUMENT();
+</pre>
+
+<p>
+After you can copy-edit a problem like this without breaking grading, you are ready to expand into
+tables, multi-part prompts, and tighter answer checking.
+</p>
+

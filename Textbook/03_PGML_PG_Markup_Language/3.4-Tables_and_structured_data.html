@@ -1,0 +1,41 @@
+<p>
+Science prompts often require structured data. Prefer table helpers that produce accessible tables
+in HTML output, and avoid using tables purely for layout.
+</p>
+
+<h2>Two table roles</h2>
+<ul>
+	<li>Data tables: real measurements or observations.</li>
+	<li>Layout tables: spacing-only, when there is no meaningful row/column relationship.</li>
+</ul>
+
+<h2>Recommended helpers</h2>
+<ul>
+	<li>
+		<code>DataTable(...)</code>: use when the table communicates data (measurements, observations,
+		counts).
+	</li>
+	<li>
+		<code>LayoutTable(...)</code>: use when the table is only for arranging content and there is no
+		meaningful row/column relationship.
+	</li>
+</ul>
+
+<h2>Basic calling pattern</h2>
+<pre>
+DataTable(
+	[
+		[ "Sample", "Ct" ],
+		[ "Control", 18.2 ],
+		[ "Treatment", 21.2 ],
+	],
+	caption => "qPCR results",
+);
+</pre>
+
+<h2>Authoring notes</h2>
+<ul>
+	<li>Use a data table whenever you want students to read values and compute from them.</li>
+	<li>Keep tables small and label columns clearly; avoid wide tables with many decimals.</li>
+	<li>Do not use a data table to position unrelated content; use <code>LayoutTable</code> for layout.</li>
+</ul>

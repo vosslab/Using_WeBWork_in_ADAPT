@@ -1,0 +1,44 @@
+<p>
+PGML is a markup language for writing the student-facing text of a WeBWorK problem. It is designed
+to replace older authoring styles that required long blocks of text and careful escaping.
+</p>
+
+<p>
+In this book, PG is treated as minimal setup code, and PGML is where you spend most of your
+authoring time.
+</p>
+
+<h2>What PGML is good at</h2>
+<ul>
+	<li>Readable prompts that look similar to the rendered output.</li>
+	<li>Math written in TeX or calculator notation with consistent delimiters.</li>
+	<li>Answer blanks tied directly to answer checkers.</li>
+	<li>Structured formatting for science prompts (lists, tables, and short sections).</li>
+</ul>
+
+<h2>Math notation (TeX and calculator notation)</h2>
+<p>
+PGML supports two styles for writing mathematics: TeX and calculator notation. Both styles support
+inline math and displayed math, and you should pick the one that matches the situation.
+</p>
+
+<h3>TeX math delimiters</h3>
+<ul>
+	<li>Inline: <code>[` ... `]</code></li>
+	<li>Display-style inline: <code>[`` ... ``]</code></li>
+	<li>Display (own line): <code>[``` ... ```]</code></li>
+</ul>
+
+<h3>Calculator notation delimiters</h3>
+<ul>
+	<li>Inline: <code>[: ... :]</code></li>
+	<li>Display-style inline: <code>[:: ... ::]</code></li>
+	<li>Display (own line): <code>[::: ... :::]</code></li>
+</ul>
+
+<h3>Science-friendly practice</h3>
+<ul>
+	<li>Use inline math for variable names and short expressions.</li>
+	<li>Use display math for longer equations or multi-step expressions.</li>
+	<li>Keep units outside the math expression unless you are explicitly typesetting them.</li>
+</ul>

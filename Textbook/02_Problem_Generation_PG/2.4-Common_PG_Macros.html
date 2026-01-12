@@ -25,6 +25,25 @@ often when writing PGML-first problems.
 	</li>
 </ul>
 
+<h2>Advanced macro topics you will see referenced</h2>
+<p>
+Some macro families show up often in existing WeBWorK problem banks. You do not need them for most
+PGML-first life science prompts, but it helps to recognize the names when reading or adapting
+older problems.
+</p>
+<ul>
+	<li>
+		<strong>Algorithmic questions</strong>: patterns and helpers for controlled randomization, so
+		each student gets a different (but equivalent) version.
+	</li>
+	<li>
+		<strong>Inexact values (significant figures)</strong>: the <code>InexactValue</code> macro and
+		related helpers for sig-fig-aware grading and presentation. Use only when your course truly
+		requires strict sig-fig handling; otherwise, prefer explicit tolerances and clear reporting
+		expectations.
+	</li>
+</ul>
+
 <h2>Minimal PGML-first loadMacros block</h2>
 <pre>
 DOCUMENT();

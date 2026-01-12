@@ -1,0 +1,32 @@
+<p>
+Answer blanks are the center of most WeBWorK problems. In PGML, blanks are written as
+<code>[_____]</code> and the correct answer can be attached immediately after the blank using
+braces.
+</p>
+
+<h2>Basic numeric blank</h2>
+<pre>
+BEGIN_PGML
+The value is [______]{12}
+END_PGML
+</pre>
+
+<h2>Expression and formula blanks</h2>
+<p>
+If the correct answer is a formula, use a quoted string or a Formula MathObject.
+</p>
+
+<pre>
+$f = Compute("x^2-1");
+
+BEGIN_PGML
+[`y = `] [________________]{$f}
+END_PGML
+</pre>
+
+<h2>Why attach answers to blanks</h2>
+<ul>
+	<li>The grading rule stays next to the text that asks for it.</li>
+	<li>Multi-part science prompts are easier to maintain.</li>
+	<li>It reduces the chance of mismatching answer order and prompt order.</li>
+</ul>

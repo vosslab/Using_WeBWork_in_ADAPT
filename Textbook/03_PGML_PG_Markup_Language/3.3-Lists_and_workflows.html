@@ -1,0 +1,61 @@
+<p>
+Lists are one of the most useful PGML features for life science prompts because many tasks are
+multi-step workflows. Use lists to make expectations scannable and to reduce "I missed that part"
+errors.
+</p>
+
+<h2>Numbered lists</h2>
+<pre>
+BEGIN_PGML
+1. Compute the concentration.
+2. Report the value with units.
+END_PGML
+</pre>
+
+<p>
+Start a numbered list item with a number, a period, and a space. PGML will renumber items in the
+rendered output, so the specific numbers you type are not the important part.
+</p>
+
+<p>
+To include a second paragraph within the same list item, indent the paragraph with four spaces.
+</p>
+
+<pre>
+BEGIN_PGML
+1. First step with a paragraph.
+
+    This stays inside the first item.
+2. Second step
+END_PGML
+</pre>
+
+<h2>Bullet lists</h2>
+<pre>
+BEGIN_PGML
+* Use the values from the table.
+* Keep units consistent.
+END_PGML
+</pre>
+
+<p>
+Bulleted list items typically begin with an asterisk (<code>*</code>) or a dash (<code>-</code>).
+</p>
+
+<h2>Biology workflow example</h2>
+<pre>
+BEGIN_PGML
+You are preparing a PCR reaction mix. Follow these steps:
+
+1. Compute the final primer concentration in &mu;M.
+2. Compute the final MgCl2 concentration in mM.
+3. Decide whether the final buffer is 1x or not.
+END_PGML
+</pre>
+
+<h2>Authoring notes</h2>
+<ul>
+	<li>Keep each list item to one task.</li>
+	<li>When a task requires a unit or a format, state it inside the list item.</li>
+	<li>Use lists to make constraints visible (for example, "round to two decimals").</li>
+</ul>

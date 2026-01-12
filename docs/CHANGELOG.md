@@ -1,6 +1,8 @@
 # Changelog
 
 ## 2026-01-12
+- Rewrote `README.md` as a stable repository overview and authoring guide (LibreTexts constraints,
+  chapter map, editing workflow, and validation commands).
 - Expanded `README.md` with repository layout, topic coverage, and usage guidance
   based on the Insight-HTML exports.
 - Replaced `README.md` with the chapter expansion plan for the `Textbook/` guide.
@@ -32,9 +34,29 @@
   `Textbook/TEXTBOOK_PAGE_SUMMARIES.md`.
 - Rewrote `Textbook/TEXTBOOK_PAGE_SUMMARIES.md` to vary sentence openers while keeping the
   three-sentence structure and the stable "Use it ..." third sentence.
-- Reorganized the textbook chapter layout by adding a Chapter 1 quickstart, splitting question
-  types into `Textbook/05_Question_Types/`, and moving the ADAPT workflow into `Textbook/07_ADAPT_Workflow/`.
-- Expanded the PGML chapter with new subsection pages under `Textbook/03_PGML_PG_Markup_Language/`.
-- Added placeholder chapters for debugging/QA, randomization, answer checking, accessibility,
-  maintenance/sharing, and appendices under `Textbook/08_*` through `Textbook/12_*` and
-  `Textbook/90_Appendices/`.
+- Moved the `Textbook/TEXTBOOK_PAGE_SUMMARIES.md` SEO tags onto a separate line under each entry.
+- Expanded the `Textbook/TEXTBOOK_PAGE_SUMMARIES.md` guideline language to better match the intended
+  three-sentence structure while avoiding formal jargon.
+- Updated `Textbook/TEXTBOOK_PAGE_SUMMARIES.md` SEO tags to be intentionally short (aiming for ~3
+  tags per page, allowing fewer or more when it helps).
+- Shifted `Textbook/TEXTBOOK_PAGE_SUMMARIES.md` SEO tags away from repeated global terms and toward
+  page-specific, index-like topics.
+- Reorganized the textbook chapter layout by adding a Chapter 1 quickstart and splitting question
+  types into `Textbook/05_Question_Types/` with life-science-first examples and checklists.
+- Expanded `Textbook/02_Problem_Generation_PG/2.2-PG_Problem_Files_with_a_pg_file_extension.html`
+  with a five-section structure guide and an annotated PGML-first skeleton.
+- Expanded `Textbook/02_Problem_Generation_PG/2.4-Common_PG_Macros.html` with advanced macro topics
+  frequently referenced in older problems (algorithmic and InexactValue-related patterns).
+- Condensed the PGML chapter to a smaller set of focused subsections under
+  `Textbook/03_PGML_PG_Markup_Language/` and updated the chapter index accordingly.
+- Updated the worked example in `Textbook/04_Simple_Problem_Example_in_WeBWorK/4.0-Index.html` to a
+  PCR mix concentration calculation (life-science lab context).
+- Integrated ADAPT workflow notes and QA guidance into Chapter 5 via
+  `Textbook/05_Question_Types/5.9-ADAPT_workflow_checklist.html` and
+  `Textbook/05_Question_Types/5.10-QA_and_common_failures.html` and removed the separate
+  `Textbook/07_*` through `Textbook/13_*` standalone chapter folders to keep the main chapter list
+  compact.
+- Added Chapter 6 subject-specific subsections with a biology-first pattern catalog (dilutions,
+  kinetics, genetics mapping, pathways, gels/blots, qPCR Ct, pedigrees, and experimental design).
+- Added `Textbook/90_Appendices/90.5-Advanced_patterns_and_further_techniques.html` as a curated
+  "further techniques" section (strings in context, data tables, custom feedback, and scaffolding).

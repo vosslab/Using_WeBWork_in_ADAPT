@@ -1,0 +1,53 @@
+<p>
+Layout controls can improve readability for longer prompts, but fragile formatting is one of the
+fastest ways to create problems that render differently across systems. Prefer simple structure
+(headings, lists, and tables) and treat layout controls as an optional finishing touch.
+</p>
+
+<h2>Headings (structure)</h2>
+<p>
+Headings help students scan a multi-part prompt. In PGML, headings are written with
+<code>#</code> characters at the start of a line.
+</p>
+
+<pre>
+BEGIN_PGML
+# Data
+## Tasks
+### Report
+END_PGML
+</pre>
+
+<h2>Emphasis (bold and italic)</h2>
+<ul>
+	<li>Bold: <code>*bold*</code></li>
+	<li>Italic: <code>_italic_</code></li>
+	<li>Bold italic: <code>*_bold italic_*</code></li>
+</ul>
+
+<p>
+Use emphasis to highlight the task being asked and the reporting expectations (units, rounding),
+not to decorate the story.
+</p>
+
+<h2>Horizontal rules (sparingly)</h2>
+<p>
+Horizontal rules can separate major blocks, but headings are usually clearer.
+</p>
+<pre>
+----
+</pre>
+
+<h2>Justification and centering (rare)</h2>
+<p>
+PGML supports simple right-justification and centering syntax. These are occasionally useful for a
+short "report" block, but they can be fragile and are easy to overuse.
+</p>
+
+<pre>
+BEGIN_PGML
+>> Right-justified line
+
+>> centered <<
+END_PGML
+</pre>

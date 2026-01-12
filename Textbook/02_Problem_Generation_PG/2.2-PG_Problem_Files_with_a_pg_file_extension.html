@@ -8,6 +8,26 @@ mix of:
 	<li>PGML text blocks (the student-facing prompt)</li>
 </ul>
 
+<h2>Common structure (five sections)</h2>
+<p>
+Most <code>.pg</code> files follow a predictable structure. When you know the structure, you can
+read problems faster and keep your own authoring consistent.
+</p>
+<ol>
+	<li>
+		<strong>Tagging and description</strong>: comments and metadata that help humans and indexing
+		systems.
+	</li>
+	<li><strong>Initialization</strong>: <code>DOCUMENT();</code> and <code>loadMacros(...);</code>.</li>
+	<li><strong>Problem setup</strong>: contexts, variables, randomization, answer objects.</li>
+	<li><strong>Text</strong>: the student-facing prompt, typically in <code>BEGIN_PGML</code>.</li>
+	<li>
+		<strong>Optional solution and extras</strong>: hints/solutions and any remaining answer setup.
+		With PGML-first authoring, answers are usually attached directly to blanks, so a separate
+		answer section is often unnecessary.
+	</li>
+</ol>
+
 <h2>Minimal PGML-first template</h2>
 <p>
 This template shows the intended structure: short setup, then a PGML prompt.
@@ -37,6 +57,45 @@ What is the total count?
 
 [`Total = `] [________]{$ans}
 END_PGML
+
+ENDDOCUMENT();
+</pre>
+
+<h2>Annotated skeleton (recommended)</h2>
+<p>
+When you are learning, it helps to keep a short commented skeleton and copy-edit it rather than
+starting from a blank file.
+</p>
+
+<pre>
+# 1) Tagging and description (optional, but useful)
+# DESCRIPTION
+# ... summary for future authors ...
+# ENDDESCRIPTION
+
+# 2) Initialization (required)
+DOCUMENT();
+loadMacros(
+	"PGstandard.pl",
+	"MathObjects.pl",
+	"PGML.pl",
+	"PGcourse.pl",
+);
+
+# 3) Setup (keep small)
+Context("Numeric");
+# ... choose random values ...
+# ... define answer objects and graders ...
+
+# 4) Text (student-facing prompt)
+BEGIN_PGML
+... prompt text ...
+... answer blanks tied to answers ...
+END_PGML
+
+# 5) Optional hint/solution blocks
+# BEGIN_PGML_HINT ... END_PGML_HINT
+# BEGIN_PGML_SOLUTION ... END_PGML_SOLUTION
 
 ENDDOCUMENT();
 </pre>
