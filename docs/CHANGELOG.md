@@ -1,6 +1,8 @@
 # Changelog
 
 ## 2026-01-12
+- Added `docs/CODE_ARCHITECTURE.md` and `docs/FILE_STRUCTURE.md` to document the repo workflows, components, and
+  directory layout.
 - Rewrote `README.md` as a stable repository overview and authoring guide (LibreTexts constraints,
   chapter map, editing workflow, and validation commands).
 - Expanded `README.md` with repository layout, topic coverage, and usage guidance
