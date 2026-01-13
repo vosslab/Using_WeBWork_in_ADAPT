@@ -49,8 +49,8 @@ cleanly and that values and answers are consistent throughout.
 
 <p>
 As you read, notice which lines are structural and which lines are content. Structural lines are
-macro loading, context, and section delimiters; content lines are the prompt text, specific values,
-and the explanation in the solution.
+macro loading and section delimiters; content lines are the prompt text, choice lists, and the
+explanation in the solution.
 </p>
 
 <h2>Section anchors (reference map)</h2>
@@ -128,7 +128,7 @@ Why this exists: it declares the macros and global options that make the file re
 
 <p style="background-color: #dcfce7; padding: 6px 10px;"><strong>Setup</strong></p>
 <p>
-Why this exists: it defines the randomized values and the answer object.
+Why this exists: it defines the answer objects and correct choices.
 </p>
 <table class="mt-responsive-table">
 	<colgroup>
@@ -143,8 +143,8 @@ Why this exists: it defines the randomized values and the answer object.
 	</thead>
 	<tbody>
 		<tr>
-			<td data-th="Common edits">Adjust ranges or tolerances.</td>
-			<td data-th="Common failures">Impossible wet-lab values.</td>
+			<td data-th="Common edits">Edit choice lists or correct answers.</td>
+			<td data-th="Common failures">Correct answer no longer matches the list.</td>
 		</tr>
 	</tbody>
 </table>
@@ -189,8 +189,8 @@ Why this exists: it explains the grading target and the method.
 	</thead>
 	<tbody>
 		<tr>
-			<td data-th="Common edits">Clarify rounding or units.</td>
-			<td data-th="Common failures">Solution mismatches the checker.</td>
+			<td data-th="Common edits">Clarify the correct option or rationale.</td>
+			<td data-th="Common failures">Solution label does not match grading.</td>
 		</tr>
 	</tbody>
 </table>

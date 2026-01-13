@@ -1,6 +1,13 @@
 # Changelog
 
 ## 2026-01-13
+- Switched the Chapter 4 worked example to a radio-button choice prompt, updating the full file
+  reference and the Preamble/Setup/Statement/Solution walkthroughs to match the parserRadioButtons
+  pattern.
+- Updated Chapter 4 index and workflow tables to align with the choice-based example and removed
+  unit-specific language where it no longer applied.
+- Refreshed Chapter 4 page summaries in `Textbook/TEXTBOOK_PAGE_SUMMARIES.md` to match the new
+  example and macro focus.
 - Added consistent "How to read this code" blocks to Chapter 4 Preamble, Setup, Statement, and Solution pages,
   including focused code excerpts, line-notes tables, and common mistake callouts to guide interpretation.
 

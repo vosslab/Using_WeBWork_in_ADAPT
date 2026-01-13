@@ -26,7 +26,7 @@ mismatch between prompt and checker.
 		<tr style="background-color: #dcfce7;">
 			<td data-th="Section">Setup</td>
 			<td data-th="What it controls">Values, constraints, answers, and graders.</td>
-			<td data-th="What to check when debugging">Bad ranges, unit mismatches, or tolerance mistakes.</td>
+			<td data-th="What to check when debugging">Choice list mismatches, wrong correct answer, or grading mistakes.</td>
 		</tr>
 		<tr style="background-color: #ffedd5;">
 			<td data-th="Section">Statement</td>
@@ -65,10 +65,10 @@ mismatch between prompt and checker.
 			<td data-th="Fast test">Check that the widget renders.</td>
 		</tr>
 		<tr>
-			<td data-th="What you want to change">Change ranges or units</td>
+			<td data-th="What you want to change">Change options or the correct answer</td>
 			<td data-th="Edit here first">Setup</td>
 			<td data-th="Then verify here">Solution</td>
-			<td data-th="Fast test">Render 3 seeds and scan units.</td>
+			<td data-th="Fast test">Confirm the correct label still matches.</td>
 		</tr>
 		<tr>
 			<td data-th="What you want to change">Add a new blank</td>
@@ -77,10 +77,10 @@ mismatch between prompt and checker.
 			<td data-th="Fast test">Confirm the blank shows the right answer.</td>
 		</tr>
 		<tr>
-			<td data-th="What you want to change">Explain rounding rules</td>
+			<td data-th="What you want to change">Explain why the choice is correct</td>
 			<td data-th="Edit here first">Solution</td>
-			<td data-th="Then verify here">Setup</td>
-			<td data-th="Fast test">Compare to the tolerance settings.</td>
+			<td data-th="Then verify here">Statement</td>
+			<td data-th="Fast test">Check wording against the choice list.</td>
 		</tr>
 	</tbody>
 </table>
@@ -111,7 +111,7 @@ fails to preview.
 			<td data-th="Why it matters">Catches impossible variants early.</td>
 		</tr>
 		<tr>
-			<td data-th="Check">Scan units in prompt, blank, and solution.</td>
+			<td data-th="Check">Scan option labels in prompt, blanks, and solution.</td>
 			<td data-th="Why it matters">Prevents silent grading mismatches.</td>
 		</tr>
 	</tbody>
