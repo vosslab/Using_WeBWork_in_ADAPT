@@ -1,7 +1,7 @@
 <p>
-Local testing can save a lot of time when you are iterating on PG and PGML: you make an edit, render
-the problem, and see the result immediately without importing into a course or publishing an
-assignment.
+This chapter is about a faster way to preview and debug WeBWorK problems while you are writing
+them. It is most useful when ADAPT preview fails with a generic error and you need a line number
+and a real message.
 </p>
 
 <p>
@@ -10,24 +10,56 @@ problems locally. The goal is not to replace full testing in WeBWorK or ADAPT, b
 tight edit-preview loop for day-to-day authoring.
 </p>
 
-<h2>What local rendering is good for</h2>
+<h2>What this tool is (and is not)</h2>
 <ul>
-	<li>Quick checks while you are editing a prompt, table, or multi-part blank structure.</li>
-	<li>Reproducing a failure with a fixed seed and file path, so you can debug the same variant.</li>
-	<li>Spot-checking that substitutions, formatting, and answer blanks render as you expect.</li>
+	<li><strong>It is:</strong> a local renderer for PG and PGML that helps you iterate quickly with reproducible seeds.</li>
+	<li><strong>It is not:</strong> a full WeBWorK deployment, course manager, or replacement for ADAPT assignment preview.</li>
 </ul>
 
-<h2>What it does not replace</h2>
+<h2>When to use local rendering</h2>
+<table class="mt-responsive-table">
+	<thead>
+		<tr>
+			<th>If you need to...</th>
+			<th>Use...</th>
+			<th>Because...</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td data-th="If you need to...">Fix a render failure with a real error message</td>
+			<td data-th="Use...">Local renderer</td>
+			<td data-th="Because...">You get line-level errors and logs.</td>
+		</tr>
+		<tr>
+			<td data-th="If you need to...">Sweep random variants quickly</td>
+			<td data-th="Use...">Local renderer</td>
+			<td data-th="Because...">You can change seeds fast and keep failures reproducible.</td>
+		</tr>
+		<tr>
+			<td data-th="If you need to...">Confirm assignment behavior and student permissions</td>
+			<td data-th="Use...">ADAPT preview</td>
+			<td data-th="Because...">Only ADAPT shows the final course context.</td>
+		</tr>
+	</tbody>
+</table>
+
+<h2>Minimal prerequisites</h2>
 <ul>
-	<li>Student-view behavior inside a real course (permissions, settings, and submit controls).</li>
-	<li>ADAPT import and assignment workflow checks.</li>
-	<li>Final review of grading behavior across multiple variants in the real deployment.</li>
+	<li>Podman or Docker installed on your machine.</li>
+	<li>A local folder that contains your <code>.pg</code> files.</li>
 </ul>
+
+<h2>The one rule that saves hours</h2>
+<p>
+When a problem fails, write down (1) the file path and (2) the seed. Do not change either one until
+the failure is fixed.
+</p>
 
 <h2>Apply it today</h2>
 <ul>
-	<li>Pick one problem you are editing and use local rendering to preview the prompt after each small change.</li>
-	<li>When a variant breaks, keep the failing seed so you can reproduce the same case while debugging.</li>
+	<li>Use local rendering first for line-level errors and rapid iteration.</li>
+	<li>Use ADAPT preview last to confirm assignment context and student view.</li>
 </ul>
 
 <p>{{template.ShowOrg()}}</p>

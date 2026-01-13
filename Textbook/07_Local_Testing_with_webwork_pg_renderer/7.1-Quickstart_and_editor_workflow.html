@@ -3,6 +3,19 @@ Local rendering works best when it feels like editing a document: open a problem
 make a small change, and render again. This section outlines a simple workflow you can repeat
 every day.
 </p>
+<p>
+Think of this like a lab workflow. You keep one sample (a single <code>.pg</code> file), one condition
+(a fixed seed), and you change one variable at a time. The payoff is that you can reproduce the
+same failure and fix it without guessing.
+</p>
+
+<h2>First run checklist (5 minutes)</h2>
+<ul>
+	<li>Open the editor page and load <code>private/yourfile.pg</code>.</li>
+	<li>Set a seed (start with something memorable like <code>1234</code>).</li>
+	<li>Render once before editing so you know what “working” looks like.</li>
+	<li>Make one small text edit, save, then render again.</li>
+</ul>
 
 <h2>Choose one file and make it reproducible</h2>
 <ul>
@@ -11,11 +24,46 @@ every day.
 	<li>Change one thing per iteration so you can tell what caused the difference.</li>
 </ul>
 
+<h2>What to record while you work</h2>
+<table class="mt-responsive-table">
+	<thead>
+		<tr>
+			<th>Record</th>
+			<th>Example</th>
+			<th>Why it matters</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td data-th="Record">File path</td>
+			<td data-th="Example"><code>private/enzyme_kinetics.pg</code></td>
+			<td data-th="Why it matters">Keeps your failing case tied to one file.</td>
+		</tr>
+		<tr>
+			<td data-th="Record">Seed</td>
+			<td data-th="Example"><code>1234</code></td>
+			<td data-th="Why it matters">Locks the random variant so you can reproduce the same render.</td>
+		</tr>
+		<tr>
+			<td data-th="Record">What you changed</td>
+			<td data-th="Example">“Changed units from mM to µM in the prompt”</td>
+			<td data-th="Why it matters">Makes debugging traceable when grading stops matching the story.</td>
+		</tr>
+	</tbody>
+</table>
+
 <h2>Render and check the student-facing prompt</h2>
 <ul>
 	<li>Render the problem and read it like a student would read it.</li>
 	<li>Confirm the story makes sense with the chosen randomized values (units, ranges, and rounding).</li>
 	<li>Confirm every answer blank is visible, in the right order, and has the right unit/format cues nearby.</li>
+</ul>
+
+<h2>What “done” looks like for one edit</h2>
+<ul>
+	<li>The prompt reads cleanly as a student-facing question.</li>
+	<li>The values are plausible for biology (units, ranges, rounding).</li>
+	<li>Every blank appears where expected and matches the intended answer.</li>
 </ul>
 
 <h2>Save edits back to disk</h2>

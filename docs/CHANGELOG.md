@@ -40,6 +40,9 @@
   including matching macro docs and the problem techniques index for ordering.
 - Updated the HTML lint checker to allow external links while still flagging internal or
   relative links.
+- Expanded Chapter 7 with instructor-facing guidance: a local-vs-ADAPT decision table and
+  prerequisites in 7.0, a first-run checklist plus “what to record” table and done criteria in
+  7.1, and triage steps with common-failure patterns and a debugging note template in 7.2.
 - Expanded the README external resources list with official OpenWeBWorK PG sample example links
   used in Chapter 5.
 - Added official OpenWeBWorK sample URLs (MultipleChoicePopup, MultipleChoiceRadio, Multianswer,
