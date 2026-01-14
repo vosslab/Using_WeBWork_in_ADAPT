@@ -54,9 +54,9 @@ loadMacros('PGstandard.pl', 'PGML.pl', 'parserMultiAnswer.pl', 'PGcourse.pl');
 							<path fill-rule="evenodd" d="M10 1.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1Zm-5 0A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5v-1Zm-2 0h1v1A2.5 2.5 0 0 0 6.5 5h3A2.5 2.5 0 0 0 12 2.5v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2Z"></path>
 						</svg>
 					</button>
-					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="ͼb">DOCUMENT</span>();
+					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="(c)b">DOCUMENT</span>();
 
-<span class="ͼb">loadMacros</span>(<span class="ͼe">'PGstandard.pl'</span>, <span class="ͼe">'PGML.pl'</span>, <span class="ͼe">'parserMultiAnswer.pl'</span>, <span class="ͼe">'PGcourse.pl'</span>);
+<span class="(c)b">loadMacros</span>(<span class="(c)e">'PGstandard.pl'</span>, <span class="(c)e">'PGML.pl'</span>, <span class="(c)e">'parserMultiAnswer.pl'</span>, <span class="(c)e">'PGcourse.pl'</span>);
 </pre>
 				</div>
 				<div class="explanation preamble col-sm-12 col-md-6 order-md-last order-first p-3 border border-dark">
@@ -116,47 +116,47 @@ $multians = MultiAnswer($x, $y, $t0, $t1)-&gt;with(
 							<path fill-rule="evenodd" d="M10 1.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1Zm-5 0A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5v-1Zm-2 0h1v1A2.5 2.5 0 0 0 6.5 5h3A2.5 2.5 0 0 0 12 2.5v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2Z"></path>
 						</svg>
 					</button>
-					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="ͼb">Context</span>(<span class="ͼe">"Numeric"</span>)-&gt;<span class="ͼg">variables</span>-&gt;<span class="ͼg">are</span>(<span class="ͼe">t</span> =&gt; <span class="ͼe">"Real"</span>);
-<span class="ͼb">Context</span>()-&gt;<span class="ͼg">variables</span>-&gt;<span class="ͼg">set</span>(<span class="ͼe">t</span> =&gt; { <span class="ͼe">limits</span> =&gt; [ -<span class="ͼd">5</span>, <span class="ͼd">5</span> ] });
+					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="(c)b">Context</span>(<span class="(c)e">"Numeric"</span>)-&gt;<span class="(c)g">variables</span>-&gt;<span class="(c)g">are</span>(<span class="(c)e">t</span> =&gt; <span class="(c)e">"Real"</span>);
+<span class="(c)b">Context</span>()-&gt;<span class="(c)g">variables</span>-&gt;<span class="(c)g">set</span>(<span class="(c)e">t</span> =&gt; { <span class="(c)e">limits</span> =&gt; [ -<span class="(c)d">5</span>, <span class="(c)d">5</span> ] });
 
-<span class="ͼh">$x</span>  = <span class="ͼb">Formula</span>(<span class="ͼe">"cos(t)"</span>);
-<span class="ͼh">$y</span>  = <span class="ͼb">Formula</span>(<span class="ͼe">"sin(t)"</span>);
-<span class="ͼh">$t0</span> = <span class="ͼb">Compute</span>(<span class="ͼe">"0"</span>);
-<span class="ͼh">$t1</span> = <span class="ͼb">Compute</span>(<span class="ͼe">"pi/3"</span>);
+<span class="(c)h">$x</span>  = <span class="(c)b">Formula</span>(<span class="(c)e">"cos(t)"</span>);
+<span class="(c)h">$y</span>  = <span class="(c)b">Formula</span>(<span class="(c)e">"sin(t)"</span>);
+<span class="(c)h">$t0</span> = <span class="(c)b">Compute</span>(<span class="(c)e">"0"</span>);
+<span class="(c)h">$t1</span> = <span class="(c)b">Compute</span>(<span class="(c)e">"pi/3"</span>);
 
-(<span class="ͼh">$x0</span>, <span class="ͼh">$y0</span>) = (<span class="ͼd">1</span>, <span class="ͼd">0</span>);
-(<span class="ͼh">$x1</span>, <span class="ͼh">$y1</span>) = (<span class="ͼd">1</span> / <span class="ͼd">2</span>, <span class="ͼb">sqrt</span>(<span class="ͼd">3</span>) / <span class="ͼd">2</span>);
+(<span class="(c)h">$x0</span>, <span class="(c)h">$y0</span>) = (<span class="(c)d">1</span>, <span class="(c)d">0</span>);
+(<span class="(c)h">$x1</span>, <span class="(c)h">$y1</span>) = (<span class="(c)d">1</span> / <span class="(c)d">2</span>, <span class="(c)b">sqrt</span>(<span class="(c)d">3</span>) / <span class="(c)d">2</span>);
 
-<span class="ͼh">$multians</span> = <span class="ͼb">MultiAnswer</span>(<span class="ͼh">$x</span>, <span class="ͼh">$y</span>, <span class="ͼh">$t0</span>, <span class="ͼh">$t1</span>)-&gt;<span class="ͼg">with</span>(
-    <span class="ͼe">singleResult</span> =&gt; <span class="ͼd">0</span>,
-    <span class="ͼe">checker</span>      =&gt; <span class="ͼb">sub</span> {
-        <span class="ͼb">my</span> (<span class="ͼh">$correct</span>, <span class="ͼh">$student</span>, <span class="ͼh">$self</span>) = <span class="ͼh">@_</span>;
-        <span class="ͼb">my</span> (<span class="ͼh">$xstu</span>, <span class="ͼh">$ystu</span>, <span class="ͼh">$t0stu</span>, <span class="ͼh">$t1stu</span>) = @{<span class="ͼh">$student</span>};
-        <span class="ͼb">if</span> (((<span class="ͼh">$xstu</span>**<span class="ͼd">2</span> + <span class="ͼh">$ystu</span>**<span class="ͼd">2</span>) == <span class="ͼd">1</span>)
-            &amp;&amp; ((<span class="ͼh">$xstu</span>-&gt;<span class="ͼg">eval</span>(<span class="ͼe">t</span> =&gt; <span class="ͼh">$t0stu</span>)) == <span class="ͼh">$x0</span>)
-            &amp;&amp; ((<span class="ͼh">$ystu</span>-&gt;<span class="ͼg">eval</span>(<span class="ͼe">t</span> =&gt; <span class="ͼh">$t0stu</span>)) == <span class="ͼh">$y0</span>)
-            &amp;&amp; ((<span class="ͼh">$xstu</span>-&gt;<span class="ͼg">eval</span>(<span class="ͼe">t</span> =&gt; <span class="ͼh">$t1stu</span>)) == <span class="ͼh">$x1</span>)
-            &amp;&amp; ((<span class="ͼh">$ystu</span>-&gt;<span class="ͼg">eval</span>(<span class="ͼe">t</span> =&gt; <span class="ͼh">$t1stu</span>)) == <span class="ͼh">$y1</span>))
+<span class="(c)h">$multians</span> = <span class="(c)b">MultiAnswer</span>(<span class="(c)h">$x</span>, <span class="(c)h">$y</span>, <span class="(c)h">$t0</span>, <span class="(c)h">$t1</span>)-&gt;<span class="(c)g">with</span>(
+    <span class="(c)e">singleResult</span> =&gt; <span class="(c)d">0</span>,
+    <span class="(c)e">checker</span>      =&gt; <span class="(c)b">sub</span> {
+        <span class="(c)b">my</span> (<span class="(c)h">$correct</span>, <span class="(c)h">$student</span>, <span class="(c)h">$self</span>) = <span class="(c)h">@_</span>;
+        <span class="(c)b">my</span> (<span class="(c)h">$xstu</span>, <span class="(c)h">$ystu</span>, <span class="(c)h">$t0stu</span>, <span class="(c)h">$t1stu</span>) = @{<span class="(c)h">$student</span>};
+        <span class="(c)b">if</span> (((<span class="(c)h">$xstu</span>**<span class="(c)d">2</span> + <span class="(c)h">$ystu</span>**<span class="(c)d">2</span>) == <span class="(c)d">1</span>)
+            &amp;&amp; ((<span class="(c)h">$xstu</span>-&gt;<span class="(c)g">eval</span>(<span class="(c)e">t</span> =&gt; <span class="(c)h">$t0stu</span>)) == <span class="(c)h">$x0</span>)
+            &amp;&amp; ((<span class="(c)h">$ystu</span>-&gt;<span class="(c)g">eval</span>(<span class="(c)e">t</span> =&gt; <span class="(c)h">$t0stu</span>)) == <span class="(c)h">$y0</span>)
+            &amp;&amp; ((<span class="(c)h">$xstu</span>-&gt;<span class="(c)g">eval</span>(<span class="(c)e">t</span> =&gt; <span class="(c)h">$t1stu</span>)) == <span class="(c)h">$x1</span>)
+            &amp;&amp; ((<span class="(c)h">$ystu</span>-&gt;<span class="(c)g">eval</span>(<span class="(c)e">t</span> =&gt; <span class="(c)h">$t1stu</span>)) == <span class="(c)h">$y1</span>))
         {
-            <span class="ͼb">return</span> [ <span class="ͼd">1</span>, <span class="ͼd">1</span>, <span class="ͼd">1</span>, <span class="ͼd">1</span> ];
+            <span class="(c)b">return</span> [ <span class="(c)d">1</span>, <span class="(c)d">1</span>, <span class="(c)d">1</span>, <span class="(c)d">1</span> ];
 
-        } <span class="ͼb">elsif</span> (((<span class="ͼh">$xstu</span>**<span class="ͼd">2</span> + <span class="ͼh">$ystu</span>**<span class="ͼd">2</span>) == <span class="ͼd">1</span>)
-            &amp;&amp; ((<span class="ͼh">$xstu</span>-&gt;<span class="ͼg">eval</span>(<span class="ͼe">t</span> =&gt; <span class="ͼh">$t0stu</span>)) == <span class="ͼh">$x0</span>)
-            &amp;&amp; ((<span class="ͼh">$ystu</span>-&gt;<span class="ͼg">eval</span>(<span class="ͼe">t</span> =&gt; <span class="ͼh">$t0stu</span>)) == <span class="ͼh">$y0</span>))
+        } <span class="(c)b">elsif</span> (((<span class="(c)h">$xstu</span>**<span class="(c)d">2</span> + <span class="(c)h">$ystu</span>**<span class="(c)d">2</span>) == <span class="(c)d">1</span>)
+            &amp;&amp; ((<span class="(c)h">$xstu</span>-&gt;<span class="(c)g">eval</span>(<span class="(c)e">t</span> =&gt; <span class="(c)h">$t0stu</span>)) == <span class="(c)h">$x0</span>)
+            &amp;&amp; ((<span class="(c)h">$ystu</span>-&gt;<span class="(c)g">eval</span>(<span class="(c)e">t</span> =&gt; <span class="(c)h">$t0stu</span>)) == <span class="(c)h">$y0</span>))
         {
-            <span class="ͼb">return</span> [ <span class="ͼd">1</span>, <span class="ͼd">1</span>, <span class="ͼd">1</span>, <span class="ͼd">0</span> ];
+            <span class="(c)b">return</span> [ <span class="(c)d">1</span>, <span class="(c)d">1</span>, <span class="(c)d">1</span>, <span class="(c)d">0</span> ];
 
-        } <span class="ͼb">elsif</span> (((<span class="ͼh">$xstu</span>**<span class="ͼd">2</span> + <span class="ͼh">$ystu</span>**<span class="ͼd">2</span>) == <span class="ͼd">1</span>)
-            &amp;&amp; ((<span class="ͼh">$xstu</span>-&gt;<span class="ͼg">eval</span>(<span class="ͼe">t</span> =&gt; <span class="ͼh">$t1stu</span>)) == <span class="ͼh">$x1</span>)
-            &amp;&amp; ((<span class="ͼh">$ystu</span>-&gt;<span class="ͼg">eval</span>(<span class="ͼe">t</span> =&gt; <span class="ͼh">$t1stu</span>)) == <span class="ͼh">$y1</span>))
+        } <span class="(c)b">elsif</span> (((<span class="(c)h">$xstu</span>**<span class="(c)d">2</span> + <span class="(c)h">$ystu</span>**<span class="(c)d">2</span>) == <span class="(c)d">1</span>)
+            &amp;&amp; ((<span class="(c)h">$xstu</span>-&gt;<span class="(c)g">eval</span>(<span class="(c)e">t</span> =&gt; <span class="(c)h">$t1stu</span>)) == <span class="(c)h">$x1</span>)
+            &amp;&amp; ((<span class="(c)h">$ystu</span>-&gt;<span class="(c)g">eval</span>(<span class="(c)e">t</span> =&gt; <span class="(c)h">$t1stu</span>)) == <span class="(c)h">$y1</span>))
         {
-            <span class="ͼb">return</span> [ <span class="ͼd">1</span>, <span class="ͼd">1</span>, <span class="ͼd">0</span>, <span class="ͼd">1</span> ];
+            <span class="(c)b">return</span> [ <span class="(c)d">1</span>, <span class="(c)d">1</span>, <span class="(c)d">0</span>, <span class="(c)d">1</span> ];
 
-        } <span class="ͼb">elsif</span> (((<span class="ͼh">$xstu</span>**<span class="ͼd">2</span> + <span class="ͼh">$ystu</span>**<span class="ͼd">2</span>) == <span class="ͼd">1</span>)) {
-            <span class="ͼb">return</span> [ <span class="ͼd">1</span>, <span class="ͼd">1</span>, <span class="ͼd">0</span>, <span class="ͼd">0</span> ];
+        } <span class="(c)b">elsif</span> (((<span class="(c)h">$xstu</span>**<span class="(c)d">2</span> + <span class="(c)h">$ystu</span>**<span class="(c)d">2</span>) == <span class="(c)d">1</span>)) {
+            <span class="(c)b">return</span> [ <span class="(c)d">1</span>, <span class="(c)d">1</span>, <span class="(c)d">0</span>, <span class="(c)d">0</span> ];
 
-        } <span class="ͼb">else</span> {
-            <span class="ͼb">return</span> [ <span class="ͼd">0</span>, <span class="ͼd">0</span>, <span class="ͼd">0</span>, <span class="ͼd">0</span> ];
+        } <span class="(c)b">else</span> {
+            <span class="(c)b">return</span> [ <span class="(c)d">0</span>, <span class="(c)d">0</span>, <span class="(c)d">0</span>, <span class="(c)d">0</span> ];
         }
     }
 );</pre>
@@ -167,9 +167,9 @@ $multians = MultiAnswer($x, $y, $t0, $t1)-&gt;with(
 satisfy the equation for the circle and have the required starting and
 ending points. This answer checker will allow students to enter any
 correct parametrization. For example, both <code>x = \cos(t)</code>,
-<code>y = sin(t)</code>, <code>0 ≤ t ≤ pi/3</code> and
+<code>y = sin(t)</code>, <code>0 <= t <= pi/3</code> and
 <code>x = cos(2t)</code>, <code>y = sin(2t)</code>,
-<code>0 ≤ t ≤ pi/6</code> will be marked correct.</p>
+<code>0 <= t <= pi/6</code> will be marked correct.</p>
 <p>When evaluating student's answers, it is important not to use quotes.
 For example, if the code were
 <code>$xstu-&gt;eval(t =&gt; "$t1stu")</code> with quotes, then if a
@@ -205,17 +205,17 @@ END_PGML
 							<path fill-rule="evenodd" d="M10 1.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1Zm-5 0A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5v-1Zm-2 0h1v1A2.5 2.5 0 0 0 6.5 5h3A2.5 2.5 0 0 0 12 2.5v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2Z"></path>
 						</svg>
 					</button>
-					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="ͼb">BEGIN_PGML</span>
+					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="(c)b">BEGIN_PGML</span>
 Find a parametrization of the unit circle from the point
-<span class="ͼn">[`</span><span class="ͼc">\big(1, 0\big)</span><span class="ͼn">`]</span> to <span class="ͼn">[`</span><span class="ͼc">\big(\frac{1}{2}, \frac{\sqrt{3}}{2}\big)</span><span class="ͼn">`]</span>.
-Use <span class="ͼn">[`</span><span class="ͼc">t</span><span class="ͼn">`]</span> as the parameter for your answers.
+<span class="(c)n">[`</span><span class="(c)c">\big(1, 0\big)</span><span class="(c)n">`]</span> to <span class="(c)n">[`</span><span class="(c)c">\big(\frac{1}{2}, \frac{\sqrt{3}}{2}\big)</span><span class="(c)n">`]</span>.
+Use <span class="(c)n">[`</span><span class="(c)c">t</span><span class="(c)n">`]</span> as the parameter for your answers.
 
-<span class="ͼn">[`</span><span class="ͼc">x(t) =</span><span class="ͼn">`]</span> <span class="ͼc">[__]</span><span class="ͼn">{</span><span class="ͼh">$multians</span><span class="ͼn">}</span>
+<span class="(c)n">[`</span><span class="(c)c">x(t) =</span><span class="(c)n">`]</span> <span class="(c)c">[__]</span><span class="(c)n">{</span><span class="(c)h">$multians</span><span class="(c)n">}</span>
 
-<span class="ͼn">[`</span><span class="ͼc">y(t) =</span><span class="ͼn">`]</span> <span class="ͼc">[__]</span><span class="ͼn">{</span><span class="ͼh">$multians</span><span class="ͼn">}</span>
+<span class="(c)n">[`</span><span class="(c)c">y(t) =</span><span class="(c)n">`]</span> <span class="(c)c">[__]</span><span class="(c)n">{</span><span class="(c)h">$multians</span><span class="(c)n">}</span>
 
-from <span class="ͼc">[__]</span><span class="ͼn">{</span><span class="ͼh">$multians</span><span class="ͼn">}</span> to <span class="ͼc">[__]</span><span class="ͼn">{</span><span class="ͼh">$multians</span><span class="ͼn">}</span>.
-<span class="ͼb">END_PGML</span>
+from <span class="(c)c">[__]</span><span class="(c)n">{</span><span class="(c)h">$multians</span><span class="(c)n">}</span> to <span class="(c)c">[__]</span><span class="(c)n">{</span><span class="(c)h">$multians</span><span class="(c)n">}</span>.
+<span class="(c)b">END_PGML</span>
 </pre>
 				</div>
 				<div class="explanation statement col-sm-12 col-md-6 order-md-last order-first p-3 border border-dark">
@@ -234,11 +234,11 @@ ENDDOCUMENT();" aria-label="copy to clipboard">
 							<path fill-rule="evenodd" d="M10 1.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1Zm-5 0A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5v-1Zm-2 0h1v1A2.5 2.5 0 0 0 6.5 5h3A2.5 2.5 0 0 0 12 2.5v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2Z"></path>
 						</svg>
 					</button>
-					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="ͼb">BEGIN_PGML_SOLUTION</span>
+					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="(c)b">BEGIN_PGML_SOLUTION</span>
 Solution explanation goes here.
-<span class="ͼb">END_PGML_SOLUTION</span>
+<span class="(c)b">END_PGML_SOLUTION</span>
 
-<span class="ͼb">ENDDOCUMENT</span><span class="ͼo">();</span></pre>
+<span class="(c)b">ENDDOCUMENT</span><span class="(c)o">();</span></pre>
 				</div>
 				<div class="explanation solution col-sm-12 col-md-6 order-md-last order-first p-3 border border-dark">
 					<p><b>Solution</b></p>

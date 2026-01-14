@@ -66,8 +66,8 @@ loadMacros('PGstandard.pl', 'PGML.pl', 'parserVectorUtils.pl', 'PGcourse.pl');
 							<path fill-rule="evenodd" d="M10 1.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1Zm-5 0A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5v-1Zm-2 0h1v1A2.5 2.5 0 0 0 6.5 5h3A2.5 2.5 0 0 0 12 2.5v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2Z"></path>
 						</svg>
 					</button>
-					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="ͼb">DOCUMENT</span>();
-<span class="ͼb">loadMacros</span>(<span class="ͼe">'PGstandard.pl'</span>, <span class="ͼe">'PGML.pl'</span>, <span class="ͼe">'parserVectorUtils.pl'</span>, <span class="ͼe">'PGcourse.pl'</span>);
+					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="(c)b">DOCUMENT</span>();
+<span class="(c)b">loadMacros</span>(<span class="(c)e">'PGstandard.pl'</span>, <span class="(c)e">'PGML.pl'</span>, <span class="(c)e">'parserVectorUtils.pl'</span>, <span class="(c)e">'PGcourse.pl'</span>);
 </pre>
 				</div>
 				<div class="explanation preamble col-sm-12 col-md-6 order-md-last order-first p-3 border border-dark">
@@ -92,14 +92,14 @@ $ans = Compute(&quot;$P + $speed * t * $disp / norm($disp)&quot;);
 							<path fill-rule="evenodd" d="M10 1.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1Zm-5 0A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5v-1Zm-2 0h1v1A2.5 2.5 0 0 0 6.5 5h3A2.5 2.5 0 0 0 12 2.5v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2Z"></path>
 						</svg>
 					</button>
-					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="ͼb">Context</span>(<span class="ͼe">"Vector"</span>);
-<span class="ͼb">Context</span>()-&gt;<span class="ͼg">variables</span>-&gt;<span class="ͼg">are</span>(<span class="ͼe">t</span> =&gt; <span class="ͼe">"Real"</span>);
+					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="(c)b">Context</span>(<span class="(c)e">"Vector"</span>);
+<span class="(c)b">Context</span>()-&gt;<span class="(c)g">variables</span>-&gt;<span class="(c)g">are</span>(<span class="(c)e">t</span> =&gt; <span class="(c)e">"Real"</span>);
 
-<span class="ͼh">$P</span>     = <span class="ͼg">non_zero_point3D</span>();
-<span class="ͼh">$disp</span>  = <span class="ͼg">non_zero_vector3D</span>();
-<span class="ͼh">$speed</span> = <span class="ͼb">random</span>(<span class="ͼd">3</span>, <span class="ͼd">9</span>, <span class="ͼd">1</span>);
+<span class="(c)h">$P</span>     = <span class="(c)g">non_zero_point3D</span>();
+<span class="(c)h">$disp</span>  = <span class="(c)g">non_zero_vector3D</span>();
+<span class="(c)h">$speed</span> = <span class="(c)b">random</span>(<span class="(c)d">3</span>, <span class="(c)d">9</span>, <span class="(c)d">1</span>);
 
-<span class="ͼh">$ans</span> = <span class="ͼb">Compute</span>(<span class="ͼe">"</span><span class="ͼh">$P</span><span class="ͼe"> + </span><span class="ͼh">$speed</span><span class="ͼe"> * t * </span><span class="ͼh">$disp</span><span class="ͼe"> / norm(</span><span class="ͼh">$disp</span><span class="ͼe">)"</span>);
+<span class="(c)h">$ans</span> = <span class="(c)b">Compute</span>(<span class="(c)e">"</span><span class="(c)h">$P</span><span class="(c)e"> + </span><span class="(c)h">$speed</span><span class="(c)e"> * t * </span><span class="(c)h">$disp</span><span class="(c)e"> / norm(</span><span class="(c)h">$disp</span><span class="(c)e">)"</span>);
 </pre>
 				</div>
 				<div class="explanation setup col-sm-12 col-md-6 order-md-last order-first p-3 border border-dark">
@@ -130,18 +130,18 @@ END_PGML
 							<path fill-rule="evenodd" d="M10 1.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1Zm-5 0A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5v-1Zm-2 0h1v1A2.5 2.5 0 0 0 6.5 5h3A2.5 2.5 0 0 0 12 2.5v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2Z"></path>
 						</svg>
 					</button>
-					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="ͼb">BEGIN_PGML</span>
-A particle starts at the point <span class="ͼn">[`</span><span class="ͼc">P = </span><span class="ͼn">[</span><span class="ͼh">$P</span><span class="ͼn">]</span><span class="ͼn">`]</span> when <span class="ͼn">[`</span><span class="ͼc">t = 0</span><span class="ͼn">`]</span> and moves along a
-straight line toward <span class="ͼn">[`</span><span class="ͼc">Q = </span><span class="ͼn">[@</span> <span class="ͼb">Point</span>(<span class="ͼh">$P</span> + <span class="ͼh">$disp</span>) <span class="ͼn">@]</span><span class="ͼn">`]</span> at a speed of <span class="ͼn">[`</span><span class="ͼn">[</span><span class="ͼh">$speed</span><span class="ͼn">]</span><span class="ͼn">`]</span>
-centimeters per second.  Assume that <span class="ͼn">[`</span><span class="ͼc">x</span><span class="ͼn">`]</span>, <span class="ͼn">[`</span><span class="ͼc">y</span><span class="ͼn">`]</span>, and <span class="ͼn">[`</span><span class="ͼc">z</span><span class="ͼn">`]</span> are measured in
+					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="(c)b">BEGIN_PGML</span>
+A particle starts at the point <span class="(c)n">[`</span><span class="(c)c">P = </span><span class="(c)n">[</span><span class="(c)h">$P</span><span class="(c)n">]</span><span class="(c)n">`]</span> when <span class="(c)n">[`</span><span class="(c)c">t = 0</span><span class="(c)n">`]</span> and moves along a
+straight line toward <span class="(c)n">[`</span><span class="(c)c">Q = </span><span class="(c)n">[@</span> <span class="(c)b">Point</span>(<span class="(c)h">$P</span> + <span class="(c)h">$disp</span>) <span class="(c)n">@]</span><span class="(c)n">`]</span> at a speed of <span class="(c)n">[`</span><span class="(c)n">[</span><span class="(c)h">$speed</span><span class="(c)n">]</span><span class="(c)n">`]</span>
+centimeters per second.  Assume that <span class="(c)n">[`</span><span class="(c)c">x</span><span class="(c)n">`]</span>, <span class="(c)n">[`</span><span class="(c)c">y</span><span class="(c)n">`]</span>, and <span class="(c)n">[`</span><span class="(c)c">z</span><span class="(c)n">`]</span> are measured in
 centimeters.
 
 Find a vector equation for the position of the object.
 
-<span class="ͼn">[`</span><span class="ͼc"> \vec{r}(t) = </span><span class="ͼn">`]</span> <span class="ͼc">[_]</span><span class="ͼn">{</span><span class="ͼh">$ans</span><span class="ͼn">}</span><span class="ͼn">{</span><span class="ͼd">10</span><span class="ͼn">}</span>
+<span class="(c)n">[`</span><span class="(c)c"> \vec{r}(t) = </span><span class="(c)n">`]</span> <span class="(c)c">[_]</span><span class="(c)n">{</span><span class="(c)h">$ans</span><span class="(c)n">}</span><span class="(c)n">{</span><span class="(c)d">10</span><span class="(c)n">}</span>
 
-<span class="ͼ8 ͼn">_</span><span class="ͼ8">Do not include units in your answer.</span><span class="ͼ8 ͼn">_</span>
-<span class="ͼb">END_PGML</span>
+<span class="(c)8 (c)n">_</span><span class="(c)8">Do not include units in your answer.</span><span class="(c)8 (c)n">_</span>
+<span class="(c)b">END_PGML</span>
 </pre>
 				</div>
 				<div class="explanation statement col-sm-12 col-md-6 order-md-last order-first p-3 border border-dark">
@@ -160,11 +160,11 @@ ENDDOCUMENT();" aria-label="copy to clipboard">
 							<path fill-rule="evenodd" d="M10 1.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1Zm-5 0A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5v-1Zm-2 0h1v1A2.5 2.5 0 0 0 6.5 5h3A2.5 2.5 0 0 0 12 2.5v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2Z"></path>
 						</svg>
 					</button>
-					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="ͼb">BEGIN_PGML_SOLUTION</span>
+					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="(c)b">BEGIN_PGML_SOLUTION</span>
 Solution explanation goes here.
-<span class="ͼb">END_PGML_SOLUTION</span>
+<span class="(c)b">END_PGML_SOLUTION</span>
 
-<span class="ͼb">ENDDOCUMENT</span><span class="ͼo">();</span></pre>
+<span class="(c)b">ENDDOCUMENT</span><span class="(c)o">();</span></pre>
 				</div>
 				<div class="explanation solution col-sm-12 col-md-6 order-md-last order-first p-3 border border-dark">
 					<p><b>Solution</b></p>

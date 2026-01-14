@@ -59,12 +59,12 @@ loadMacros(
 							<path fill-rule="evenodd" d="M10 1.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1Zm-5 0A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5v-1Zm-2 0h1v1A2.5 2.5 0 0 0 6.5 5h3A2.5 2.5 0 0 0 12 2.5v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2Z"></path>
 						</svg>
 					</button>
-					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="ͼb">DOCUMENT</span>();
+					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="(c)b">DOCUMENT</span>();
 
-<span class="ͼb">loadMacros</span>(
-    <span class="ͼe">'PGstandard.pl'</span>,  <span class="ͼe">'PGML.pl'</span>,
-    <span class="ͼe">'parserPopUp.pl'</span>, <span class="ͼe">'PGessaymacros.pl'</span>,
-    <span class="ͼe">'PGcourse.pl'</span>
+<span class="(c)b">loadMacros</span>(
+    <span class="(c)e">'PGstandard.pl'</span>,  <span class="(c)e">'PGML.pl'</span>,
+    <span class="(c)e">'parserPopUp.pl'</span>, <span class="(c)e">'PGessaymacros.pl'</span>,
+    <span class="(c)e">'PGcourse.pl'</span>
 );
 </pre>
 				</div>
@@ -91,15 +91,15 @@ $f2 = Compute(&quot;ln(x) + ln(x - $a)&quot;);
 							<path fill-rule="evenodd" d="M10 1.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1Zm-5 0A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5v-1Zm-2 0h1v1A2.5 2.5 0 0 0 6.5 5h3A2.5 2.5 0 0 0 12 2.5v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2Z"></path>
 						</svg>
 					</button>
-					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="ͼh">$popup</span> = <span class="ͼb">PopUp</span>(
-    [ <span class="ͼe">'Choose'</span>, <span class="ͼe">'True'</span>, <span class="ͼe">'False'</span> ],    <span class="ͼo"># choices</span>
-    <span class="ͼe">'False'</span>                           <span class="ͼo"># correct answer</span>
+					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="(c)h">$popup</span> = <span class="(c)b">PopUp</span>(
+    [ <span class="(c)e">'Choose'</span>, <span class="(c)e">'True'</span>, <span class="(c)e">'False'</span> ],    <span class="(c)o"># choices</span>
+    <span class="(c)e">'False'</span>                           <span class="(c)o"># correct answer</span>
 );
 
-<span class="ͼh">$a</span> = <span class="ͼb">random</span>(<span class="ͼd">2</span>, <span class="ͼd">5</span>);
+<span class="(c)h">$a</span> = <span class="(c)b">random</span>(<span class="(c)d">2</span>, <span class="(c)d">5</span>);
 
-<span class="ͼh">$f1</span> = <span class="ͼb">Compute</span>(<span class="ͼe">"ln(x(x - </span><span class="ͼh">$a</span><span class="ͼe">))"</span>);
-<span class="ͼh">$f2</span> = <span class="ͼb">Compute</span>(<span class="ͼe">"ln(x) + ln(x - </span><span class="ͼh">$a</span><span class="ͼe">)"</span>);
+<span class="(c)h">$f1</span> = <span class="(c)b">Compute</span>(<span class="(c)e">"ln(x(x - </span><span class="(c)h">$a</span><span class="(c)e">))"</span>);
+<span class="(c)h">$f2</span> = <span class="(c)b">Compute</span>(<span class="(c)e">"ln(x) + ln(x - </span><span class="(c)h">$a</span><span class="(c)e">)"</span>);
 </pre>
 				</div>
 				<div class="explanation setup col-sm-12 col-md-6 order-md-last order-first p-3 border border-dark">
@@ -125,17 +125,17 @@ ENDDOCUMENT();
 							<path fill-rule="evenodd" d="M10 1.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1Zm-5 0A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5v-1Zm-2 0h1v1A2.5 2.5 0 0 0 6.5 5h3A2.5 2.5 0 0 0 12 2.5v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2Z"></path>
 						</svg>
 					</button>
-					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="ͼb">BEGIN_PGML</span>
+					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="(c)b">BEGIN_PGML</span>
 Determine if the following statement is true or false, and then explain your
 answer.  Your explanation will be graded manually at a later time.
 
-<span class="ͼc">[_]</span><span class="ͼn">{</span><span class="ͼh">$popup</span><span class="ͼn">}</span>: For all real numbers <span class="ͼn">[`</span><span class="ͼc">x</span><span class="ͼn">`]</span>, <span class="ͼn">[`</span><span class="ͼn">[</span><span class="ͼh">$f1</span><span class="ͼn">]</span><span class="ͼc"> = </span><span class="ͼn">[</span><span class="ͼh">$f2</span><span class="ͼn">]</span><span class="ͼn">`]</span>.
+<span class="(c)c">[_]</span><span class="(c)n">{</span><span class="(c)h">$popup</span><span class="(c)n">}</span>: For all real numbers <span class="(c)n">[`</span><span class="(c)c">x</span><span class="(c)n">`]</span>, <span class="(c)n">[`</span><span class="(c)n">[</span><span class="(c)h">$f1</span><span class="(c)n">]</span><span class="(c)c"> = </span><span class="(c)n">[</span><span class="(c)h">$f2</span><span class="(c)n">]</span><span class="(c)n">`]</span>.
 
 Please explain your reasoning in the answer box below.
-<span class="ͼn">[@</span> <span class="ͼb">ANS</span>(<span class="ͼb">essay_cmp</span>()); <span class="ͼb">essay_box</span>(<span class="ͼd">8</span>, <span class="ͼd">60</span>) <span class="ͼn">@]*</span>
-<span class="ͼb">END_PGML</span>
+<span class="(c)n">[@</span> <span class="(c)b">ANS</span>(<span class="(c)b">essay_cmp</span>()); <span class="(c)b">essay_box</span>(<span class="(c)d">8</span>, <span class="(c)d">60</span>) <span class="(c)n">@]*</span>
+<span class="(c)b">END_PGML</span>
 
-<span class="ͼb">ENDDOCUMENT</span><span class="ͼo">();</span>
+<span class="(c)b">ENDDOCUMENT</span><span class="(c)o">();</span>
 </pre>
 				</div>
 				<div class="explanation statement col-sm-12 col-md-6 order-md-last order-first p-3 border border-dark">

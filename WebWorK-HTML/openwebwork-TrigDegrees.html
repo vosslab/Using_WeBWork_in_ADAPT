@@ -59,12 +59,12 @@ loadMacros(
 							<path fill-rule="evenodd" d="M10 1.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1Zm-5 0A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5v-1Zm-2 0h1v1A2.5 2.5 0 0 0 6.5 5h3A2.5 2.5 0 0 0 12 2.5v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2Z"></path>
 						</svg>
 					</button>
-					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="ͼb">DOCUMENT</span>();
+					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="(c)b">DOCUMENT</span>();
 
-<span class="ͼb">loadMacros</span>(
-    <span class="ͼe">'PGstandard.pl'</span>,         <span class="ͼe">'PGML.pl'</span>,
-    <span class="ͼe">'contextTrigDegrees.pl'</span>, <span class="ͼe">'contextUnits.pl'</span>,
-    <span class="ͼe">'PGcourse.pl'</span>
+<span class="(c)b">loadMacros</span>(
+    <span class="(c)e">'PGstandard.pl'</span>,         <span class="(c)e">'PGML.pl'</span>,
+    <span class="(c)e">'contextTrigDegrees.pl'</span>, <span class="(c)e">'contextUnits.pl'</span>,
+    <span class="(c)e">'PGcourse.pl'</span>
 );
 </pre>
 				</div>
@@ -89,13 +89,13 @@ $ang = Compute('30 degrees');
 							<path fill-rule="evenodd" d="M10 1.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1Zm-5 0A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5v-1Zm-2 0h1v1A2.5 2.5 0 0 0 6.5 5h3A2.5 2.5 0 0 0 12 2.5v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2Z"></path>
 						</svg>
 					</button>
-					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="ͼb">Context</span>(<span class="ͼe">'TrigDegrees'</span>);
+					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="(c)b">Context</span>(<span class="(c)e">'TrigDegrees'</span>);
 
-<span class="ͼh">$y</span> = <span class="ͼb">Compute</span>(<span class="ͼe">'sin(30)'</span>);
+<span class="(c)h">$y</span> = <span class="(c)b">Compute</span>(<span class="(c)e">'sin(30)'</span>);
 
-<span class="ͼb">Context</span>(<span class="ͼe">'Units'</span>)-&gt;<span class="ͼg">withUnitsFor</span>(<span class="ͼe">'angles'</span>);
+<span class="(c)b">Context</span>(<span class="(c)e">'Units'</span>)-&gt;<span class="(c)g">withUnitsFor</span>(<span class="(c)e">'angles'</span>);
 
-<span class="ͼh">$ang</span> = <span class="ͼb">Compute</span>(<span class="ͼe">'30 degrees'</span>);
+<span class="(c)h">$ang</span> = <span class="(c)b">Compute</span>(<span class="(c)e">'30 degrees'</span>);
 </pre>
 				</div>
 				<div class="explanation setup col-sm-12 col-md-6 order-md-last order-first p-3 border border-dark">
@@ -122,12 +122,12 @@ END_PGML
 							<path fill-rule="evenodd" d="M10 1.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1Zm-5 0A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5v-1Zm-2 0h1v1A2.5 2.5 0 0 0 6.5 5h3A2.5 2.5 0 0 0 12 2.5v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2Z"></path>
 						</svg>
 					</button>
-					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="ͼb">BEGIN_PGML</span>
+					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="(c)b">BEGIN_PGML</span>
 Evaluate the following.  Give angles in degrees.
 
-<span class="ͼn">1. </span><span class="ͼn">[`</span><span class="ͼc">\sin(30^{\circ}) =</span><span class="ͼn">`]</span> <span class="ͼc">[_]</span><span class="ͼn">{</span><span class="ͼh">$y</span><span class="ͼn">}</span>
-<span class="ͼn">2. </span><span class="ͼn">[``</span><span class="ͼc">\sin^{-1}\left(\frac{1}{2}\right) =</span><span class="ͼn">``]</span> <span class="ͼc">[_]</span><span class="ͼn">{</span><span class="ͼh">$ang</span>-&gt;<span class="ͼg">with</span>(<span class="ͼe">sameUnits</span> =&gt; <span class="ͼd">1</span>)<span class="ͼn">}</span>
-<span class="ͼb">END_PGML</span>
+<span class="(c)n">1. </span><span class="(c)n">[`</span><span class="(c)c">\sin(30^{\circ}) =</span><span class="(c)n">`]</span> <span class="(c)c">[_]</span><span class="(c)n">{</span><span class="(c)h">$y</span><span class="(c)n">}</span>
+<span class="(c)n">2. </span><span class="(c)n">[``</span><span class="(c)c">\sin^{-1}\left(\frac{1}{2}\right) =</span><span class="(c)n">``]</span> <span class="(c)c">[_]</span><span class="(c)n">{</span><span class="(c)h">$ang</span>-&gt;<span class="(c)g">with</span>(<span class="(c)e">sameUnits</span> =&gt; <span class="(c)d">1</span>)<span class="(c)n">}</span>
+<span class="(c)b">END_PGML</span>
 </pre>
 				</div>
 				<div class="explanation statement col-sm-12 col-md-6 order-md-last order-first p-3 border border-dark">
@@ -146,11 +146,11 @@ ENDDOCUMENT();" aria-label="copy to clipboard">
 							<path fill-rule="evenodd" d="M10 1.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1Zm-5 0A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5v-1Zm-2 0h1v1A2.5 2.5 0 0 0 6.5 5h3A2.5 2.5 0 0 0 12 2.5v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2Z"></path>
 						</svg>
 					</button>
-					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="ͼb">BEGIN_PGML_SOLUTION</span>
+					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="(c)b">BEGIN_PGML_SOLUTION</span>
 Solution explanation goes here.
-<span class="ͼb">END_PGML_SOLUTION</span>
+<span class="(c)b">END_PGML_SOLUTION</span>
 
-<span class="ͼb">ENDDOCUMENT</span><span class="ͼo">();</span></pre>
+<span class="(c)b">ENDDOCUMENT</span><span class="(c)o">();</span></pre>
 				</div>
 				<div class="explanation solution col-sm-12 col-md-6 order-md-last order-first p-3 border border-dark">
 					<p><b>Solution</b></p>

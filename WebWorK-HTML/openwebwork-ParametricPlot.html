@@ -54,9 +54,9 @@ loadMacros('PGstandard.pl', 'PGML.pl', 'PGtikz.pl', 'PGcourse.pl');
 							<path fill-rule="evenodd" d="M10 1.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1Zm-5 0A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5v-1Zm-2 0h1v1A2.5 2.5 0 0 0 6.5 5h3A2.5 2.5 0 0 0 12 2.5v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2Z"></path>
 						</svg>
 					</button>
-					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="ͼb">DOCUMENT</span>();
+					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="(c)b">DOCUMENT</span>();
 
-<span class="ͼb">loadMacros</span>(<span class="ͼe">'PGstandard.pl'</span>, <span class="ͼe">'PGML.pl'</span>, <span class="ͼe">'PGtikz.pl'</span>, <span class="ͼe">'PGcourse.pl'</span>);
+<span class="(c)b">loadMacros</span>(<span class="(c)e">'PGstandard.pl'</span>, <span class="(c)e">'PGML.pl'</span>, <span class="(c)e">'PGtikz.pl'</span>, <span class="(c)e">'PGcourse.pl'</span>);
 </pre>
 				</div>
 				<div class="explanation preamble col-sm-12 col-md-6 order-md-last order-first p-3 border border-dark">
@@ -104,38 +104,38 @@ $line = Compute(&quot;$m(x - $x0) + $y0&quot;);
 							<path fill-rule="evenodd" d="M10 1.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1Zm-5 0A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5v-1Zm-2 0h1v1A2.5 2.5 0 0 0 6.5 5h3A2.5 2.5 0 0 0 12 2.5v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2Z"></path>
 						</svg>
 					</button>
-					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="ͼb">Context</span>()-&gt;<span class="ͼg">variables</span>-&gt;<span class="ͼg">add</span>(<span class="ͼe">t</span> =&gt; <span class="ͼe">'Real'</span>);
+					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="(c)b">Context</span>()-&gt;<span class="(c)g">variables</span>-&gt;<span class="(c)g">add</span>(<span class="(c)e">t</span> =&gt; <span class="(c)e">'Real'</span>);
 
-<span class="ͼh">$graph</span> = <span class="ͼb">createTikZImage</span>();
-<span class="ͼh">$graph</span>-&gt;<span class="ͼg">tikzLibraries</span>(<span class="ͼe">'arrows.meta'</span>);
-<span class="ͼh">$graph</span>-&gt;<span class="ͼe">BEGIN_TIKZ</span>
-<span class="ͼe">\tikzset{&gt;={Stealth[scale = 1.5]}}</span>
-<span class="ͼe">\filldraw[</span>
-<span class="ͼe">    draw = LightBlue,</span>
-<span class="ͼe">    fill = white,</span>
-<span class="ͼe">    rounded corners = 10pt,</span>
-<span class="ͼe">    thick,</span>
-<span class="ͼe">    use as bounding box</span>
-<span class="ͼe">] (-3.5, -3.5) rectangle (3.5, 3.5);</span>
-<span class="ͼe">\draw[-&gt;] (-3.5, 0) -- (3.5, 0) node[above left, outer sep = 3pt] {\(x\)};</span>
-<span class="ͼe">\foreach \x in {-3, -2, -1, 1, 2, 3}</span>
-<span class="ͼe">    \draw (\x, 0.15) -- (\x, -0.15) node[below] {\x};</span>
-<span class="ͼe">\draw[-&gt;] (0, -3.5) -- (0, 3.5)</span>
-<span class="ͼe">    node[below right, outer sep = 3pt] {\(y\)};</span>
-<span class="ͼe">\foreach \y in {-3, -2, -1, 1, 2, 3}</span>
-<span class="ͼe">    \draw (0.15, \y) -- (-0.15, \y) node[left] {\y};</span>
-<span class="ͼe">\draw[DarkBlue, very thick]</span>
-<span class="ͼe">    plot[samples = 100, domain = 0:{2 * pi}, variable = \t]</span>
-<span class="ͼe">    ({2 * sin(2 * \t r)}, {2 * sin(3 * \t r)});</span>
-<span class="ͼe">END_TIKZ</span>
+<span class="(c)h">$graph</span> = <span class="(c)b">createTikZImage</span>();
+<span class="(c)h">$graph</span>-&gt;<span class="(c)g">tikzLibraries</span>(<span class="(c)e">'arrows.meta'</span>);
+<span class="(c)h">$graph</span>-&gt;<span class="(c)e">BEGIN_TIKZ</span>
+<span class="(c)e">\tikzset{&gt;={Stealth[scale = 1.5]}}</span>
+<span class="(c)e">\filldraw[</span>
+<span class="(c)e">    draw = LightBlue,</span>
+<span class="(c)e">    fill = white,</span>
+<span class="(c)e">    rounded corners = 10pt,</span>
+<span class="(c)e">    thick,</span>
+<span class="(c)e">    use as bounding box</span>
+<span class="(c)e">] (-3.5, -3.5) rectangle (3.5, 3.5);</span>
+<span class="(c)e">\draw[-&gt;] (-3.5, 0) -- (3.5, 0) node[above left, outer sep = 3pt] {\(x\)};</span>
+<span class="(c)e">\foreach \x in {-3, -2, -1, 1, 2, 3}</span>
+<span class="(c)e">    \draw (\x, 0.15) -- (\x, -0.15) node[below] {\x};</span>
+<span class="(c)e">\draw[-&gt;] (0, -3.5) -- (0, 3.5)</span>
+<span class="(c)e">    node[below right, outer sep = 3pt] {\(y\)};</span>
+<span class="(c)e">\foreach \y in {-3, -2, -1, 1, 2, 3}</span>
+<span class="(c)e">    \draw (0.15, \y) -- (-0.15, \y) node[left] {\y};</span>
+<span class="(c)e">\draw[DarkBlue, very thick]</span>
+<span class="(c)e">    plot[samples = 100, domain = 0:{2 * pi}, variable = \t]</span>
+<span class="(c)e">    ({2 * sin(2 * \t r)}, {2 * sin(3 * \t r)});</span>
+<span class="(c)e">END_TIKZ</span>
 
-<span class="ͼh">$x</span>  = <span class="ͼb">Compute</span>(<span class="ͼe">'2sin(2t)'</span>);
-<span class="ͼh">$x0</span> = <span class="ͼh">$x</span>-&gt;<span class="ͼg">eval</span>(<span class="ͼe">t</span> =&gt; <span class="ͼe">'pi/3'</span>);
-<span class="ͼh">$y</span>  = <span class="ͼb">Compute</span>(<span class="ͼe">'2sin(3t)'</span>);
-<span class="ͼh">$y0</span> = <span class="ͼh">$y</span>-&gt;<span class="ͼg">eval</span>(<span class="ͼe">t</span> =&gt; <span class="ͼe">'pi/3'</span>);
+<span class="(c)h">$x</span>  = <span class="(c)b">Compute</span>(<span class="(c)e">'2sin(2t)'</span>);
+<span class="(c)h">$x0</span> = <span class="(c)h">$x</span>-&gt;<span class="(c)g">eval</span>(<span class="(c)e">t</span> =&gt; <span class="(c)e">'pi/3'</span>);
+<span class="(c)h">$y</span>  = <span class="(c)b">Compute</span>(<span class="(c)e">'2sin(3t)'</span>);
+<span class="(c)h">$y0</span> = <span class="(c)h">$y</span>-&gt;<span class="(c)g">eval</span>(<span class="(c)e">t</span> =&gt; <span class="(c)e">'pi/3'</span>);
 
-<span class="ͼh">$m</span>    = <span class="ͼh">$y</span>-&gt;<span class="ͼg">D</span>(<span class="ͼe">'t'</span>)-&gt;<span class="ͼg">eval</span>(<span class="ͼe">t</span> =&gt; <span class="ͼe">'pi/3'</span>) / <span class="ͼh">$x</span>-&gt;<span class="ͼg">D</span>(<span class="ͼe">'t'</span>)-&gt;<span class="ͼg">eval</span>(<span class="ͼe">t</span> =&gt; <span class="ͼe">'pi/3'</span>);
-<span class="ͼh">$line</span> = <span class="ͼb">Compute</span>(<span class="ͼe">"</span><span class="ͼh">$m</span><span class="ͼe">(x - </span><span class="ͼh">$x0</span><span class="ͼe">) + </span><span class="ͼh">$y0</span><span class="ͼe">"</span>);
+<span class="(c)h">$m</span>    = <span class="(c)h">$y</span>-&gt;<span class="(c)g">D</span>(<span class="(c)e">'t'</span>)-&gt;<span class="(c)g">eval</span>(<span class="(c)e">t</span> =&gt; <span class="(c)e">'pi/3'</span>) / <span class="(c)h">$x</span>-&gt;<span class="(c)g">D</span>(<span class="(c)e">'t'</span>)-&gt;<span class="(c)g">eval</span>(<span class="(c)e">t</span> =&gt; <span class="(c)e">'pi/3'</span>);
+<span class="(c)h">$line</span> = <span class="(c)b">Compute</span>(<span class="(c)e">"</span><span class="(c)h">$m</span><span class="(c)e">(x - </span><span class="(c)h">$x0</span><span class="(c)e">) + </span><span class="(c)h">$y0</span><span class="(c)e">"</span>);
 </pre>
 				</div>
 				<div class="explanation setup col-sm-12 col-md-6 order-md-last order-first p-3 border border-dark">
@@ -181,17 +181,17 @@ END_PGML
 							<path fill-rule="evenodd" d="M10 1.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1Zm-5 0A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5v-1Zm-2 0h1v1A2.5 2.5 0 0 0 6.5 5h3A2.5 2.5 0 0 0 12 2.5v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2Z"></path>
 						</svg>
 					</button>
-					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="ͼb">BEGIN_PGML</span>
+					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="(c)b">BEGIN_PGML</span>
 Find the tangent line to the parametric curve
 
-<span class="ͼn">&gt;&gt; </span><span class="ͼn">[``</span><span class="ͼc">x(t) = </span><span class="ͼn">[</span><span class="ͼh">$x</span><span class="ͼn">]</span><span class="ͼc">, \quad y(t) = </span><span class="ͼn">[</span><span class="ͼh">$y</span><span class="ͼn">]</span><span class="ͼn">``]</span><span class="ͼn"> &lt;&lt;</span>
+<span class="(c)n">&gt;&gt; </span><span class="(c)n">[``</span><span class="(c)c">x(t) = </span><span class="(c)n">[</span><span class="(c)h">$x</span><span class="(c)n">]</span><span class="(c)c">, \quad y(t) = </span><span class="(c)n">[</span><span class="(c)h">$y</span><span class="(c)n">]</span><span class="(c)n">``]</span><span class="(c)n"> &lt;&lt;</span>
 
-when <span class="ͼn">[`</span><span class="ͼc">t = \pi/3</span><span class="ͼn">`]</span>.  The graph of the curve is
+when <span class="(c)n">[`</span><span class="(c)c">t = \pi/3</span><span class="(c)n">`]</span>.  The graph of the curve is
 
-<span class="ͼn">&gt;&gt;</span><span class="ͼn">[!</span><span class="ͼc">a Lissajous curve</span><span class="ͼn">!]</span><span class="ͼn">{</span><span class="ͼh">$graph</span><span class="ͼn">}</span><span class="ͼn">{</span><span class="ͼd">300</span><span class="ͼn">}</span><span class="ͼn">&lt;&lt;</span>
+<span class="(c)n">&gt;&gt;</span><span class="(c)n">[!</span><span class="(c)c">a Lissajous curve</span><span class="(c)n">!]</span><span class="(c)n">{</span><span class="(c)h">$graph</span><span class="(c)n">}</span><span class="(c)n">{</span><span class="(c)d">300</span><span class="(c)n">}</span><span class="(c)n">&lt;&lt;</span>
 
-Tangent line in slope-intercept form: <span class="ͼn">[`</span><span class="ͼc">y =</span><span class="ͼn">`]</span> <span class="ͼc">[_____]</span><span class="ͼn">{</span><span class="ͼh">$line</span><span class="ͼn">}</span>
-<span class="ͼb">END_PGML</span>
+Tangent line in slope-intercept form: <span class="(c)n">[`</span><span class="(c)c">y =</span><span class="(c)n">`]</span> <span class="(c)c">[_____]</span><span class="(c)n">{</span><span class="(c)h">$line</span><span class="(c)n">}</span>
+<span class="(c)b">END_PGML</span>
 </pre>
 				</div>
 				<div class="explanation statement col-sm-12 col-md-6 order-md-last order-first p-3 border border-dark">
@@ -213,11 +213,11 @@ ENDDOCUMENT();" aria-label="copy to clipboard">
 							<path fill-rule="evenodd" d="M10 1.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1Zm-5 0A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5v-1Zm-2 0h1v1A2.5 2.5 0 0 0 6.5 5h3A2.5 2.5 0 0 0 12 2.5v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2Z"></path>
 						</svg>
 					</button>
-					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="ͼb">BEGIN_PGML_SOLUTION</span>
+					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="(c)b">BEGIN_PGML_SOLUTION</span>
 Solution explanation goes here.
-<span class="ͼb">END_PGML_SOLUTION</span>
+<span class="(c)b">END_PGML_SOLUTION</span>
 
-<span class="ͼb">ENDDOCUMENT</span><span class="ͼo">();</span></pre>
+<span class="(c)b">ENDDOCUMENT</span><span class="(c)o">();</span></pre>
 				</div>
 				<div class="explanation solution col-sm-12 col-md-6 order-md-last order-first p-3 border border-dark">
 					<p><b>Solution</b></p>

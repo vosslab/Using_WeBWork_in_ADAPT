@@ -47,8 +47,8 @@ loadMacros('PGstandard.pl', 'PGML.pl', 'PGcourse.pl');
 							<path fill-rule="evenodd" d="M10 1.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1Zm-5 0A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5v-1Zm-2 0h1v1A2.5 2.5 0 0 0 6.5 5h3A2.5 2.5 0 0 0 12 2.5v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2Z"></path>
 						</svg>
 					</button>
-					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="ͼb">DOCUMENT</span>();
-<span class="ͼb">loadMacros</span>(<span class="ͼe">'PGstandard.pl'</span>, <span class="ͼe">'PGML.pl'</span>, <span class="ͼe">'PGcourse.pl'</span>);
+					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="(c)b">DOCUMENT</span>();
+<span class="(c)b">loadMacros</span>(<span class="(c)e">'PGstandard.pl'</span>, <span class="(c)e">'PGML.pl'</span>, <span class="(c)e">'PGcourse.pl'</span>);
 </pre>
 				</div>
 				<div class="explanation preamble col-sm-12 col-md-6 order-md-last order-first p-3 border border-dark">
@@ -119,62 +119,62 @@ END_PGML
 							<path fill-rule="evenodd" d="M10 1.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1Zm-5 0A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5v-1Zm-2 0h1v1A2.5 2.5 0 0 0 6.5 5h3A2.5 2.5 0 0 0 12 2.5v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2Z"></path>
 						</svg>
 					</button>
-					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="ͼb">Context</span>(<span class="ͼe">'Vector'</span>);
-<span class="ͼo"># Uncomment to display vectors in ijk format.</span>
-<span class="ͼo">#Context()-&gt;flags-&gt;set(ijk =&gt; 1);</span>
+					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="(c)b">Context</span>(<span class="(c)e">'Vector'</span>);
+<span class="(c)o"># Uncomment to display vectors in ijk format.</span>
+<span class="(c)o">#Context()-&gt;flags-&gt;set(ijk =&gt; 1);</span>
 
-<span class="ͼo"># Uncomment to change the appearance of the ijk vectors. This sets them to be</span>
-<span class="ͼo"># overset with vector arrows, instead of bold.</span>
-<span class="ͼo">#Context()-&gt;constants-&gt;set(</span>
-<span class="ͼo">#    i =&gt; { TeX =&gt; "\mathit{\vec i}" },</span>
-<span class="ͼo">#    j =&gt; { TeX =&gt; "\mathit{\vec j}" },</span>
-<span class="ͼo">#    k =&gt; { TeX =&gt; "\mathit{\vec k}" },</span>
-<span class="ͼo">#);</span>
+<span class="(c)o"># Uncomment to change the appearance of the ijk vectors. This sets them to be</span>
+<span class="(c)o"># overset with vector arrows, instead of bold.</span>
+<span class="(c)o">#Context()-&gt;constants-&gt;set(</span>
+<span class="(c)o">#    i =&gt; { TeX =&gt; "\mathit{\vec i}" },</span>
+<span class="(c)o">#    j =&gt; { TeX =&gt; "\mathit{\vec j}" },</span>
+<span class="(c)o">#    k =&gt; { TeX =&gt; "\mathit{\vec k}" },</span>
+<span class="(c)o">#);</span>
 
-<span class="ͼh">$v1</span> = <span class="ͼb">Vector</span>(<span class="ͼe">'&lt;1, 3&gt;'</span>);
-<span class="ͼh">$v2</span> = <span class="ͼb">Compute</span>(<span class="ͼe">'&lt;-3, 1&gt;'</span>);
-<span class="ͼh">$v3</span> = <span class="ͼd">3</span> * <span class="ͼg">i</span> + <span class="ͼd">2</span> * <span class="ͼg">j</span> - <span class="ͼd">4</span> * <span class="ͼh">k</span>;
-<span class="ͼh">$v4</span> = <span class="ͼb">Vector</span>(<span class="ͼd">1</span>, <span class="ͼd">1</span>, <span class="ͼd">0</span>);
+<span class="(c)h">$v1</span> = <span class="(c)b">Vector</span>(<span class="(c)e">'&lt;1, 3&gt;'</span>);
+<span class="(c)h">$v2</span> = <span class="(c)b">Compute</span>(<span class="(c)e">'&lt;-3, 1&gt;'</span>);
+<span class="(c)h">$v3</span> = <span class="(c)d">3</span> * <span class="(c)g">i</span> + <span class="(c)d">2</span> * <span class="(c)g">j</span> - <span class="(c)d">4</span> * <span class="(c)h">k</span>;
+<span class="(c)h">$v4</span> = <span class="(c)b">Vector</span>(<span class="(c)d">1</span>, <span class="(c)d">1</span>, <span class="(c)d">0</span>);
 
-<span class="ͼo"># Create an array of the components of $v3.</span>
-<span class="ͼh">@v3comp</span> = <span class="ͼh">$v3</span>-&gt;<span class="ͼg">value</span>;
+<span class="(c)o"># Create an array of the components of $v3.</span>
+<span class="(c)h">@v3comp</span> = <span class="(c)h">$v3</span>-&gt;<span class="(c)g">value</span>;
 
-<span class="ͼh">$a</span> = <span class="ͼd">3</span> * <span class="ͼg">i</span> + <span class="ͼh">j</span>;
-<span class="ͼo"># $b = $a + $v1; # this results in an error</span>
-<span class="ͼh">$c</span>  = <span class="ͼg">norm</span>(<span class="ͼh">$v3</span>);         <span class="ͼo"># vector length</span>
-<span class="ͼh">$v5</span> = <span class="ͼg">unit</span>(<span class="ͼh">$v3</span>);         <span class="ͼo"># unit vector in same direction</span>
-<span class="ͼh">$d</span>  = <span class="ͼh">$v1</span> . <span class="ͼh">$v2</span>;         <span class="ͼo"># dot product</span>
-<span class="ͼh">$v6</span> = <span class="ͼh">$v3</span> x <span class="ͼh">$v4</span>;         <span class="ͼo"># cross product</span>
-<span class="ͼh">$v3</span>-&gt;<span class="ͼg">isParallel</span>(<span class="ͼh">$v4</span>);    <span class="ͼo"># returns 1 if parallel, 0 if skew</span>
+<span class="(c)h">$a</span> = <span class="(c)d">3</span> * <span class="(c)g">i</span> + <span class="(c)h">j</span>;
+<span class="(c)o"># $b = $a + $v1; # this results in an error</span>
+<span class="(c)h">$c</span>  = <span class="(c)g">norm</span>(<span class="(c)h">$v3</span>);         <span class="(c)o"># vector length</span>
+<span class="(c)h">$v5</span> = <span class="(c)g">unit</span>(<span class="(c)h">$v3</span>);         <span class="(c)o"># unit vector in same direction</span>
+<span class="(c)h">$d</span>  = <span class="(c)h">$v1</span> . <span class="(c)h">$v2</span>;         <span class="(c)o"># dot product</span>
+<span class="(c)h">$v6</span> = <span class="(c)h">$v3</span> x <span class="(c)h">$v4</span>;         <span class="(c)o"># cross product</span>
+<span class="(c)h">$v3</span>-&gt;<span class="(c)g">isParallel</span>(<span class="(c)h">$v4</span>);    <span class="(c)o"># returns 1 if parallel, 0 if skew</span>
 
-<span class="ͼb">BEGIN_PGML</span>
-<span class="ͼn">[`</span><span class="ͼc">\vec{v}_1 = </span><span class="ͼn">[</span><span class="ͼh">$v1</span><span class="ͼn">]</span><span class="ͼn">`]</span>
+<span class="(c)b">BEGIN_PGML</span>
+<span class="(c)n">[`</span><span class="(c)c">\vec{v}_1 = </span><span class="(c)n">[</span><span class="(c)h">$v1</span><span class="(c)n">]</span><span class="(c)n">`]</span>
 
-<span class="ͼn">[`</span><span class="ͼc">\vec{v}_2 = </span><span class="ͼn">[</span><span class="ͼh">$v2</span><span class="ͼn">]</span><span class="ͼn">`]</span>
+<span class="(c)n">[`</span><span class="(c)c">\vec{v}_2 = </span><span class="(c)n">[</span><span class="(c)h">$v2</span><span class="(c)n">]</span><span class="(c)n">`]</span>
 
-<span class="ͼn">[`</span><span class="ͼc">\vec{v}_3 = </span><span class="ͼn">[</span><span class="ͼh">$v3</span><span class="ͼn">]</span><span class="ͼn">`]</span>
+<span class="(c)n">[`</span><span class="(c)c">\vec{v}_3 = </span><span class="(c)n">[</span><span class="(c)h">$v3</span><span class="(c)n">]</span><span class="(c)n">`]</span>
 
-<span class="ͼn">[`</span><span class="ͼc">\vec{v}_4 = </span><span class="ͼn">[</span><span class="ͼh">$v4</span><span class="ͼn">]</span><span class="ͼn">`]</span>
+<span class="(c)n">[`</span><span class="(c)c">\vec{v}_4 = </span><span class="(c)n">[</span><span class="(c)h">$v4</span><span class="(c)n">]</span><span class="(c)n">`]</span>
 
-<span class="ͼn">[`</span><span class="ͼc">\vec{a} = </span><span class="ͼn">[</span><span class="ͼh">$a</span><span class="ͼn">]</span><span class="ͼn">`]</span>
+<span class="(c)n">[`</span><span class="(c)c">\vec{a} = </span><span class="(c)n">[</span><span class="(c)h">$a</span><span class="(c)n">]</span><span class="(c)n">`]</span>
 
-<span class="ͼn">[`</span><span class="ͼc">\vec{v}_1 + \vec{v}_2 = </span><span class="ͼn">[</span><span class="ͼh">$v1</span> + <span class="ͼh">$v2</span><span class="ͼn">]</span><span class="ͼn">`]</span>
+<span class="(c)n">[`</span><span class="(c)c">\vec{v}_1 + \vec{v}_2 = </span><span class="(c)n">[</span><span class="(c)h">$v1</span> + <span class="(c)h">$v2</span><span class="(c)n">]</span><span class="(c)n">`]</span>
 
-<span class="ͼn">[`</span><span class="ͼc">||\vec{v}_3|| = </span><span class="ͼn">[</span><span class="ͼh">$c</span><span class="ͼn">]</span><span class="ͼn">`]</span>
+<span class="(c)n">[`</span><span class="(c)c">||\vec{v}_3|| = </span><span class="(c)n">[</span><span class="(c)h">$c</span><span class="(c)n">]</span><span class="(c)n">`]</span>
 
-<span class="ͼn">[`</span><span class="ͼn">[</span><span class="ͼh">$v5</span><span class="ͼn">]</span><span class="ͼn">`]</span> is a unit vector in the same direction as <span class="ͼn">[`</span><span class="ͼn">[</span><span class="ͼh">$v3</span><span class="ͼn">]</span><span class="ͼn">`]</span>
+<span class="(c)n">[`</span><span class="(c)n">[</span><span class="(c)h">$v5</span><span class="(c)n">]</span><span class="(c)n">`]</span> is a unit vector in the same direction as <span class="(c)n">[`</span><span class="(c)n">[</span><span class="(c)h">$v3</span><span class="(c)n">]</span><span class="(c)n">`]</span>
 
-<span class="ͼn">[`</span><span class="ͼc">\vec{v}_1 \cdot \vec{v}_2 = </span><span class="ͼn">[</span><span class="ͼh">$d</span><span class="ͼn">]</span><span class="ͼn">`]</span>
+<span class="(c)n">[`</span><span class="(c)c">\vec{v}_1 \cdot \vec{v}_2 = </span><span class="(c)n">[</span><span class="(c)h">$d</span><span class="(c)n">]</span><span class="(c)n">`]</span>
 
-<span class="ͼn">[`</span><span class="ͼc">\vec{v}_3 \times \vec{v}_4 = </span><span class="ͼn">[</span><span class="ͼh">$v6</span><span class="ͼn">]</span><span class="ͼn">`]</span>
+<span class="(c)n">[`</span><span class="(c)c">\vec{v}_3 \times \vec{v}_4 = </span><span class="(c)n">[</span><span class="(c)h">$v6</span><span class="(c)n">]</span><span class="(c)n">`]</span>
 
-<span class="ͼn">[`</span><span class="ͼc">\vec{v}_3</span><span class="ͼn">`]</span> <span class="ͼn">[@</span> <span class="ͼh">$v3</span>-&gt;<span class="ͼg">isParallel</span>(<span class="ͼh">$v4</span>) ? <span class="ͼe">'is'</span> : <span class="ͼe">'is not'</span> <span class="ͼn">@]</span> parallel to
-<span class="ͼn">[`</span><span class="ͼc">\vec{v}_4</span><span class="ͼn">`]</span>
+<span class="(c)n">[`</span><span class="(c)c">\vec{v}_3</span><span class="(c)n">`]</span> <span class="(c)n">[@</span> <span class="(c)h">$v3</span>-&gt;<span class="(c)g">isParallel</span>(<span class="(c)h">$v4</span>) ? <span class="(c)e">'is'</span> : <span class="(c)e">'is not'</span> <span class="(c)n">@]</span> parallel to
+<span class="(c)n">[`</span><span class="(c)c">\vec{v}_4</span><span class="(c)n">`]</span>
 
-The first element of <span class="ͼn">[`</span><span class="ͼc">\vec{v}_3</span><span class="ͼn">`]</span> is <span class="ͼn">[@</span> <span class="ͼh">$v3</span>-&gt;<span class="ͼg">extract</span>(<span class="ͼd">1</span>) <span class="ͼn">@]</span>
+The first element of <span class="(c)n">[`</span><span class="(c)c">\vec{v}_3</span><span class="(c)n">`]</span> is <span class="(c)n">[@</span> <span class="(c)h">$v3</span>-&gt;<span class="(c)g">extract</span>(<span class="(c)d">1</span>) <span class="(c)n">@]</span>
 
-The third element of <span class="ͼn">[`</span><span class="ͼc">\vec{v}_4</span><span class="ͼn">`]</span> is <span class="ͼn">[@</span> <span class="ͼh">$v4</span>-&gt;<span class="ͼg">extract</span>(<span class="ͼd">3</span>) <span class="ͼn">@]</span>
-<span class="ͼb">END_PGML</span>
+The third element of <span class="(c)n">[`</span><span class="(c)c">\vec{v}_4</span><span class="(c)n">`]</span> is <span class="(c)n">[@</span> <span class="(c)h">$v4</span>-&gt;<span class="(c)g">extract</span>(<span class="(c)d">3</span>) <span class="(c)n">@]</span>
+<span class="(c)b">END_PGML</span>
 </pre>
 				</div>
 				<div class="explanation setup col-sm-12 col-md-6 order-md-last order-first p-3 border border-dark">
@@ -231,11 +231,11 @@ ENDDOCUMENT();" aria-label="copy to clipboard">
 							<path fill-rule="evenodd" d="M10 1.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1Zm-5 0A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5v-1Zm-2 0h1v1A2.5 2.5 0 0 0 6.5 5h3A2.5 2.5 0 0 0 12 2.5v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2Z"></path>
 						</svg>
 					</button>
-					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="ͼb">BEGIN_PGML_SOLUTION</span>
+					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="(c)b">BEGIN_PGML_SOLUTION</span>
 Solution explanation goes here.
-<span class="ͼb">END_PGML_SOLUTION</span>
+<span class="(c)b">END_PGML_SOLUTION</span>
 
-<span class="ͼb">ENDDOCUMENT</span><span class="ͼo">();</span></pre>
+<span class="(c)b">ENDDOCUMENT</span><span class="(c)o">();</span></pre>
 				</div>
 				<div class="explanation solution col-sm-12 col-md-6 order-md-last order-first p-3 border border-dark">
 					<p><b>Solution</b></p>

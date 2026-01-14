@@ -48,9 +48,9 @@ loadMacros('PGstandard.pl', 'PGML.pl', 'PGcourse.pl');
 							<path fill-rule="evenodd" d="M10 1.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1Zm-5 0A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5v-1Zm-2 0h1v1A2.5 2.5 0 0 0 6.5 5h3A2.5 2.5 0 0 0 12 2.5v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2Z"></path>
 						</svg>
 					</button>
-					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="ͼb">DOCUMENT</span>();
+					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="(c)b">DOCUMENT</span>();
 
-<span class="ͼb">loadMacros</span>(<span class="ͼe">'PGstandard.pl'</span>, <span class="ͼe">'PGML.pl'</span>, <span class="ͼe">'PGcourse.pl'</span>);
+<span class="(c)b">loadMacros</span>(<span class="(c)e">'PGstandard.pl'</span>, <span class="(c)e">'PGML.pl'</span>, <span class="(c)e">'PGcourse.pl'</span>);
 </pre>
 				</div>
 				<div class="explanation preamble col-sm-12 col-md-6 order-md-last order-first p-3 border border-dark">
@@ -76,17 +76,17 @@ $ans2 = Compute(&quot;$a0*$z1-$a1*$z2&quot;);
 							<path fill-rule="evenodd" d="M10 1.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1Zm-5 0A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5v-1Zm-2 0h1v1A2.5 2.5 0 0 0 6.5 5h3A2.5 2.5 0 0 0 12 2.5v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2Z"></path>
 						</svg>
 					</button>
-					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="ͼb">Context</span>(<span class="ͼe">'Complex'</span>);
+					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="(c)b">Context</span>(<span class="(c)e">'Complex'</span>);
 
-<span class="ͼh">$z0</span> = <span class="ͼb">Complex</span>(<span class="ͼb">non_zero_random</span>(-<span class="ͼd">5</span>, <span class="ͼd">4</span>), <span class="ͼb">non_zero_random</span>(-<span class="ͼd">5</span>, <span class="ͼd">5</span>));
-<span class="ͼh">$z1</span> = <span class="ͼb">Complex</span>([ -<span class="ͼd">1</span>, <span class="ͼd">4</span> ]);
-<span class="ͼh">$z2</span> = <span class="ͼb">Complex</span>(<span class="ͼe">"2-4i"</span>);
-<span class="ͼh">$z3</span> = <span class="ͼd">3</span> - <span class="ͼd">4</span> * <span class="ͼh">i</span>;
+<span class="(c)h">$z0</span> = <span class="(c)b">Complex</span>(<span class="(c)b">non_zero_random</span>(-<span class="(c)d">5</span>, <span class="(c)d">4</span>), <span class="(c)b">non_zero_random</span>(-<span class="(c)d">5</span>, <span class="(c)d">5</span>));
+<span class="(c)h">$z1</span> = <span class="(c)b">Complex</span>([ -<span class="(c)d">1</span>, <span class="(c)d">4</span> ]);
+<span class="(c)h">$z2</span> = <span class="(c)b">Complex</span>(<span class="(c)e">"2-4i"</span>);
+<span class="(c)h">$z3</span> = <span class="(c)d">3</span> - <span class="(c)d">4</span> * <span class="(c)h">i</span>;
 
-<span class="ͼh">$ans1</span> = <span class="ͼh">$z0</span> + <span class="ͼh">$z1</span>;
-<span class="ͼh">$a0</span>   = <span class="ͼb">non_zero_random</span>(-<span class="ͼd">4</span>, <span class="ͼd">4</span>);
-<span class="ͼh">$a1</span>   = <span class="ͼb">random</span>(<span class="ͼd">1</span>, <span class="ͼd">5</span>);
-<span class="ͼh">$ans2</span> = <span class="ͼb">Compute</span>(<span class="ͼe">"</span><span class="ͼh">$a0</span><span class="ͼe">*</span><span class="ͼh">$z1</span><span class="ͼe">-</span><span class="ͼh">$a1</span><span class="ͼe">*</span><span class="ͼh">$z2</span><span class="ͼe">"</span>);
+<span class="(c)h">$ans1</span> = <span class="(c)h">$z0</span> + <span class="(c)h">$z1</span>;
+<span class="(c)h">$a0</span>   = <span class="(c)b">non_zero_random</span>(-<span class="(c)d">4</span>, <span class="(c)d">4</span>);
+<span class="(c)h">$a1</span>   = <span class="(c)b">random</span>(<span class="(c)d">1</span>, <span class="(c)d">5</span>);
+<span class="(c)h">$ans2</span> = <span class="(c)b">Compute</span>(<span class="(c)e">"</span><span class="(c)h">$a0</span><span class="(c)e">*</span><span class="(c)h">$z1</span><span class="(c)e">-</span><span class="(c)h">$a1</span><span class="(c)e">*</span><span class="(c)h">$z2</span><span class="(c)e">"</span>);
 </pre>
 				</div>
 				<div class="explanation setup col-sm-12 col-md-6 order-md-last order-first p-3 border border-dark">
@@ -118,19 +118,19 @@ END_PGML
 							<path fill-rule="evenodd" d="M10 1.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1Zm-5 0A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5v-1Zm-2 0h1v1A2.5 2.5 0 0 0 6.5 5h3A2.5 2.5 0 0 0 12 2.5v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2Z"></path>
 						</svg>
 					</button>
-					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="ͼb">BEGIN_PGML</span>
-Let <span class="ͼn">[`</span><span class="ͼc">z_0 = </span><span class="ͼn">[</span><span class="ͼh">$z0</span><span class="ͼn">]</span><span class="ͼn">`]</span>, <span class="ͼn">[`</span><span class="ͼc">z_1 = </span><span class="ͼn">[</span><span class="ͼh">$z1</span><span class="ͼn">]</span><span class="ͼn">`]</span>, <span class="ͼn">[`</span><span class="ͼc">z_2 = </span><span class="ͼn">[</span><span class="ͼh">$z2</span><span class="ͼn">]</span><span class="ͼn">`]</span> and <span class="ͼn">[`</span><span class="ͼc">z_3 = </span><span class="ͼn">[</span><span class="ͼh">$z3</span><span class="ͼn">]</span><span class="ͼn">`]</span>. Find
+					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="(c)b">BEGIN_PGML</span>
+Let <span class="(c)n">[`</span><span class="(c)c">z_0 = </span><span class="(c)n">[</span><span class="(c)h">$z0</span><span class="(c)n">]</span><span class="(c)n">`]</span>, <span class="(c)n">[`</span><span class="(c)c">z_1 = </span><span class="(c)n">[</span><span class="(c)h">$z1</span><span class="(c)n">]</span><span class="(c)n">`]</span>, <span class="(c)n">[`</span><span class="(c)c">z_2 = </span><span class="(c)n">[</span><span class="(c)h">$z2</span><span class="(c)n">]</span><span class="(c)n">`]</span> and <span class="(c)n">[`</span><span class="(c)c">z_3 = </span><span class="(c)n">[</span><span class="(c)h">$z3</span><span class="(c)n">]</span><span class="(c)n">`]</span>. Find
 
-<span class="ͼn">[`</span><span class="ͼc">z_0+z_1 =</span><span class="ͼn">`]</span> <span class="ͼc">[___]</span><span class="ͼn">{</span><span class="ͼh">$ans1</span><span class="ͼn">}</span>
+<span class="(c)n">[`</span><span class="(c)c">z_0+z_1 =</span><span class="(c)n">`]</span> <span class="(c)c">[___]</span><span class="(c)n">{</span><span class="(c)h">$ans1</span><span class="(c)n">}</span>
 
-<span class="ͼn">[`</span><span class="ͼn">[</span><span class="ͼh">$a0</span><span class="ͼn">]</span><span class="ͼc">z_1 - </span><span class="ͼn">[</span><span class="ͼh">$a1</span><span class="ͼn">]</span><span class="ͼc">z_2 =</span><span class="ͼn">`]</span> <span class="ͼc">[_____]</span><span class="ͼn">{</span><span class="ͼh">$ans2</span><span class="ͼn">}</span>
+<span class="(c)n">[`</span><span class="(c)n">[</span><span class="(c)h">$a0</span><span class="(c)n">]</span><span class="(c)c">z_1 - </span><span class="(c)n">[</span><span class="(c)h">$a1</span><span class="(c)n">]</span><span class="(c)c">z_2 =</span><span class="(c)n">`]</span> <span class="(c)c">[_____]</span><span class="(c)n">{</span><span class="(c)h">$ans2</span><span class="(c)n">}</span>
 
-<span class="ͼn">[`</span><span class="ͼc">z_1 z_2 =</span><span class="ͼn">`]</span> <span class="ͼc">[___]</span><span class="ͼn">{</span><span class="ͼh">$z1</span>*<span class="ͼh">$z2</span><span class="ͼn">}</span>
+<span class="(c)n">[`</span><span class="(c)c">z_1 z_2 =</span><span class="(c)n">`]</span> <span class="(c)c">[___]</span><span class="(c)n">{</span><span class="(c)h">$z1</span>*<span class="(c)h">$z2</span><span class="(c)n">}</span>
 
-<span class="ͼn">[``</span><span class="ͼc">\frac{z_3}{z_0} =</span><span class="ͼn">``]</span> <span class="ͼc">[___]</span><span class="ͼn">{</span><span class="ͼh">$z3</span>/<span class="ͼh">$z0</span><span class="ͼn">}</span>
+<span class="(c)n">[``</span><span class="(c)c">\frac{z_3}{z_0} =</span><span class="(c)n">``]</span> <span class="(c)c">[___]</span><span class="(c)n">{</span><span class="(c)h">$z3</span>/<span class="(c)h">$z0</span><span class="(c)n">}</span>
 
-<span class="ͼn">[``</span><span class="ͼc">z_2^2 =</span><span class="ͼn">``]</span> <span class="ͼc">[__]</span><span class="ͼn">{</span><span class="ͼh">$z2</span>**<span class="ͼd">2</span><span class="ͼn">}</span>
-<span class="ͼb">END_PGML</span>
+<span class="(c)n">[``</span><span class="(c)c">z_2^2 =</span><span class="(c)n">``]</span> <span class="(c)c">[__]</span><span class="(c)n">{</span><span class="(c)h">$z2</span>**<span class="(c)d">2</span><span class="(c)n">}</span>
+<span class="(c)b">END_PGML</span>
 </pre>
 				</div>
 				<div class="explanation statement col-sm-12 col-md-6 order-md-last order-first p-3 border border-dark">
@@ -157,11 +157,11 @@ ENDDOCUMENT();" aria-label="copy to clipboard">
 							<path fill-rule="evenodd" d="M10 1.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1Zm-5 0A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5v-1Zm-2 0h1v1A2.5 2.5 0 0 0 6.5 5h3A2.5 2.5 0 0 0 12 2.5v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2Z"></path>
 						</svg>
 					</button>
-					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="ͼb">BEGIN_PGML_SOLUTION</span>
+					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="(c)b">BEGIN_PGML_SOLUTION</span>
 Solution explanation goes here.
-<span class="ͼb">END_PGML_SOLUTION</span>
+<span class="(c)b">END_PGML_SOLUTION</span>
 
-<span class="ͼb">ENDDOCUMENT</span><span class="ͼo">();</span></pre>
+<span class="(c)b">ENDDOCUMENT</span><span class="(c)o">();</span></pre>
 				</div>
 				<div class="explanation solution col-sm-12 col-md-6 order-md-last order-first p-3 border border-dark">
 					<p><b>Solution</b></p>

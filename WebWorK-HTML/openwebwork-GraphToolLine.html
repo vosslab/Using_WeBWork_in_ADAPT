@@ -54,9 +54,9 @@ loadMacros('PGstandard.pl', 'PGML.pl', 'parserGraphTool.pl', 'PGcourse.pl');
 							<path fill-rule="evenodd" d="M10 1.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1Zm-5 0A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5v-1Zm-2 0h1v1A2.5 2.5 0 0 0 6.5 5h3A2.5 2.5 0 0 0 12 2.5v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2Z"></path>
 						</svg>
 					</button>
-					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="ͼb">DOCUMENT</span>();
+					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="(c)b">DOCUMENT</span>();
 
-<span class="ͼb">loadMacros</span>(<span class="ͼe">'PGstandard.pl'</span>, <span class="ͼe">'PGML.pl'</span>, <span class="ͼe">'parserGraphTool.pl'</span>, <span class="ͼe">'PGcourse.pl'</span>);
+<span class="(c)b">loadMacros</span>(<span class="(c)e">'PGstandard.pl'</span>, <span class="(c)e">'PGML.pl'</span>, <span class="(c)e">'parserGraphTool.pl'</span>, <span class="(c)e">'PGcourse.pl'</span>);
 </pre>
 				</div>
 				<div class="explanation preamble col-sm-12 col-md-6 order-md-last order-first p-3 border border-dark">
@@ -87,17 +87,17 @@ $gt = GraphTool(&quot;{line, solid, ($x0, 0), (0, $y0)}&quot;)-&gt;with(
 							<path fill-rule="evenodd" d="M10 1.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1Zm-5 0A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5v-1Zm-2 0h1v1A2.5 2.5 0 0 0 6.5 5h3A2.5 2.5 0 0 0 12 2.5v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2Z"></path>
 						</svg>
 					</button>
-					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="ͼh">$x0</span>   = <span class="ͼb">non_zero_random</span>(-<span class="ͼd">6</span>, <span class="ͼd">6</span>);
-<span class="ͼh">$y0</span>   = <span class="ͼb">non_zero_random</span>(-<span class="ͼd">6</span>, <span class="ͼd">6</span>);
-<span class="ͼh">$line</span> = <span class="ͼg">nicestring</span>([ <span class="ͼh">$y0</span>, <span class="ͼh">$x0</span> ], [ <span class="ͼe">'x'</span>, <span class="ͼe">'y'</span> ]);
+					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="(c)h">$x0</span>   = <span class="(c)b">non_zero_random</span>(-<span class="(c)d">6</span>, <span class="(c)d">6</span>);
+<span class="(c)h">$y0</span>   = <span class="(c)b">non_zero_random</span>(-<span class="(c)d">6</span>, <span class="(c)d">6</span>);
+<span class="(c)h">$line</span> = <span class="(c)g">nicestring</span>([ <span class="(c)h">$y0</span>, <span class="(c)h">$x0</span> ], [ <span class="(c)e">'x'</span>, <span class="(c)e">'y'</span> ]);
 
-<span class="ͼh">$gt</span> = <span class="ͼb">GraphTool</span>(<span class="ͼe">"{line, solid, (</span><span class="ͼh">$x0</span><span class="ͼe">, 0), (0, </span><span class="ͼh">$y0</span><span class="ͼe">)}"</span>)-&gt;<span class="ͼg">with</span>(
-    <span class="ͼe">bBox</span>           =&gt; [ -<span class="ͼd">11</span>, <span class="ͼd">11</span>, <span class="ͼd">11</span>, -<span class="ͼd">11</span> ],
-    <span class="ͼe">availableTools</span> =&gt; [
-        <span class="ͼe">'PointTool'</span>,  <span class="ͼe">'LineTool'</span>,
-        <span class="ͼe">'CircleTool'</span>, <span class="ͼe">'QuadraticTool'</span>,
-        <span class="ͼe">'CubicTool'</span>,  <span class="ͼe">'FillTool'</span>,
-        <span class="ͼe">'SolidDashTool'</span>
+<span class="(c)h">$gt</span> = <span class="(c)b">GraphTool</span>(<span class="(c)e">"{line, solid, (</span><span class="(c)h">$x0</span><span class="(c)e">, 0), (0, </span><span class="(c)h">$y0</span><span class="(c)e">)}"</span>)-&gt;<span class="(c)g">with</span>(
+    <span class="(c)e">bBox</span>           =&gt; [ -<span class="(c)d">11</span>, <span class="(c)d">11</span>, <span class="(c)d">11</span>, -<span class="(c)d">11</span> ],
+    <span class="(c)e">availableTools</span> =&gt; [
+        <span class="(c)e">'PointTool'</span>,  <span class="(c)e">'LineTool'</span>,
+        <span class="(c)e">'CircleTool'</span>, <span class="(c)e">'QuadraticTool'</span>,
+        <span class="(c)e">'CubicTool'</span>,  <span class="(c)e">'FillTool'</span>,
+        <span class="(c)e">'SolidDashTool'</span>
     ],
 );
 </pre>
@@ -143,11 +143,11 @@ END_PGML
 							<path fill-rule="evenodd" d="M10 1.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1Zm-5 0A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5v-1Zm-2 0h1v1A2.5 2.5 0 0 0 6.5 5h3A2.5 2.5 0 0 0 12 2.5v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2Z"></path>
 						</svg>
 					</button>
-					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="ͼb">BEGIN_PGML</span>
-On the graph below, plot the line <span class="ͼn">[`</span><span class="ͼn">[</span><span class="ͼh">$line</span><span class="ͼn">]</span><span class="ͼc"> = </span><span class="ͼn">[</span><span class="ͼh">$x0</span> * <span class="ͼh">$y0</span><span class="ͼn">]</span><span class="ͼn">`]</span>.
+					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="(c)b">BEGIN_PGML</span>
+On the graph below, plot the line <span class="(c)n">[`</span><span class="(c)n">[</span><span class="(c)h">$line</span><span class="(c)n">]</span><span class="(c)c"> = </span><span class="(c)n">[</span><span class="(c)h">$x0</span> * <span class="(c)h">$y0</span><span class="(c)n">]</span><span class="(c)n">`]</span>.
 
-<span class="ͼc">[_]</span><span class="ͼn">{</span><span class="ͼh">$gt</span><span class="ͼn">}</span>
-<span class="ͼb">END_PGML</span>
+<span class="(c)c">[_]</span><span class="(c)n">{</span><span class="(c)h">$gt</span><span class="(c)n">}</span>
+<span class="(c)b">END_PGML</span>
 </pre>
 				</div>
 				<div class="explanation statement. col-sm-12 col-md-6 order-md-last order-first p-3 border border-dark">
@@ -178,23 +178,23 @@ ENDDOCUMENT();" aria-label="copy to clipboard">
 							<path fill-rule="evenodd" d="M10 1.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1Zm-5 0A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5v-1Zm-2 0h1v1A2.5 2.5 0 0 0 6.5 5h3A2.5 2.5 0 0 0 12 2.5v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2Z"></path>
 						</svg>
 					</button>
-					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="ͼb">BEGIN_PGML_SOLUTION</span>
+					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="(c)b">BEGIN_PGML_SOLUTION</span>
 Two points on the line are needed.  It could be put in slope-intercept form
-which would give a <span class="ͼn">[`</span><span class="ͼc">y</span><span class="ͼn">`]</span>-intercept, and then a second point could be determined
+which would give a <span class="(c)n">[`</span><span class="(c)c">y</span><span class="(c)n">`]</span>-intercept, and then a second point could be determined
 from the slope.
 
 Alternatively, the intercept form on the line is found by dividing both sides of
-the equation by <span class="ͼn">[`</span><span class="ͼn">[</span><span class="ͼh">$x0</span> * <span class="ͼh">$y0</span><span class="ͼn">]</span><span class="ͼn">`]</span> to get
-<span class="ͼn">[```</span><span class="ͼc">\frac{x}{</span><span class="ͼn">[</span><span class="ͼh">$x0</span><span class="ͼn">]</span><span class="ͼc">} + \frac{y}{</span><span class="ͼn">[</span><span class="ͼh">$y0</span><span class="ͼn">]</span><span class="ͼc">} = 1.</span><span class="ͼn">```]</span>
-Thus the <span class="ͼn">[`</span><span class="ͼc">x</span><span class="ͼn">`]</span>-intercept is the denominator of the fraction involving <span class="ͼn">[`</span><span class="ͼc">x</span><span class="ͼn">`]</span> or
-<span class="ͼn">[`</span><span class="ͼn">[</span><span class="ͼh">$x0</span><span class="ͼn">]</span><span class="ͼn">`]</span> and the <span class="ͼn">[`</span><span class="ͼc">y</span><span class="ͼn">`]</span>-intercept is the denominator of the fraction involving
-<span class="ͼn">[`</span><span class="ͼc">y</span><span class="ͼn">`]</span> or <span class="ͼn">[`</span><span class="ͼn">[</span><span class="ͼh">$y0</span><span class="ͼn">]</span><span class="ͼn">`]</span>.
+the equation by <span class="(c)n">[`</span><span class="(c)n">[</span><span class="(c)h">$x0</span> * <span class="(c)h">$y0</span><span class="(c)n">]</span><span class="(c)n">`]</span> to get
+<span class="(c)n">[```</span><span class="(c)c">\frac{x}{</span><span class="(c)n">[</span><span class="(c)h">$x0</span><span class="(c)n">]</span><span class="(c)c">} + \frac{y}{</span><span class="(c)n">[</span><span class="(c)h">$y0</span><span class="(c)n">]</span><span class="(c)c">} = 1.</span><span class="(c)n">```]</span>
+Thus the <span class="(c)n">[`</span><span class="(c)c">x</span><span class="(c)n">`]</span>-intercept is the denominator of the fraction involving <span class="(c)n">[`</span><span class="(c)c">x</span><span class="(c)n">`]</span> or
+<span class="(c)n">[`</span><span class="(c)n">[</span><span class="(c)h">$x0</span><span class="(c)n">]</span><span class="(c)n">`]</span> and the <span class="(c)n">[`</span><span class="(c)c">y</span><span class="(c)n">`]</span>-intercept is the denominator of the fraction involving
+<span class="(c)n">[`</span><span class="(c)c">y</span><span class="(c)n">`]</span> or <span class="(c)n">[`</span><span class="(c)n">[</span><span class="(c)h">$y0</span><span class="(c)n">]</span><span class="(c)n">`]</span>.
 
 The solution is
-<span class="ͼn">[!</span><span class="ͼc"> the graph of the line through (</span><span class="ͼn">[</span><span class="ͼh">$x0</span><span class="ͼn">]</span><span class="ͼc">,0) and (0,</span><span class="ͼn">[</span><span class="ͼh">$y0</span><span class="ͼn">]</span><span class="ͼc">) </span><span class="ͼn">!]</span><span class="ͼn">{</span><span class="ͼh">$gt</span><span class="ͼn">}</span>
-<span class="ͼb">END_PGML_SOLUTION</span>
+<span class="(c)n">[!</span><span class="(c)c"> the graph of the line through (</span><span class="(c)n">[</span><span class="(c)h">$x0</span><span class="(c)n">]</span><span class="(c)c">,0) and (0,</span><span class="(c)n">[</span><span class="(c)h">$y0</span><span class="(c)n">]</span><span class="(c)c">) </span><span class="(c)n">!]</span><span class="(c)n">{</span><span class="(c)h">$gt</span><span class="(c)n">}</span>
+<span class="(c)b">END_PGML_SOLUTION</span>
 
-<span class="ͼb">ENDDOCUMENT</span><span class="ͼo">();</span></pre>
+<span class="(c)b">ENDDOCUMENT</span><span class="(c)o">();</span></pre>
 				</div>
 				<div class="explanation solution col-sm-12 col-md-6 order-md-last order-first p-3 border border-dark">
 					<p><b>Solution</b></p>

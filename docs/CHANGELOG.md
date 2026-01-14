@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-01-14
+- Updated `tests/check_ascii_compliance.py` to replace U+037C, U+2264, U+2004, and U+2005 with ASCII equivalents and to drop U+200E.
+- Added replacements in `tests/check_ascii_compliance.py` for U+FEFF and common emoji to ASCII words.
+- Removed the default emoji word replacements in `tests/check_ascii_compliance.py` so emoji are handled case by case.
+- Added an emoji count warning to `tests/run_ascii_compliance.py` to flag emoji for manual handling.
+
 ## 2026-01-13
 - Updated `docs/LIBRETEXTS_HTML_GUIDE.md` with Construction Guide-derived rules for headings, links,
   templates, titles, tables, images, and embedded media.
@@ -28,17 +34,17 @@
 - Refreshed Chapter 4 page summaries in `Textbook/TEXTBOOK_PAGE_SUMMARIES.md` to match the new
   example and macro focus.
 - Tuned Chapter 1 pages with instructor-facing reassurance, clearer tool-fit guidance, and
-  stronger “where to focus first” cues across sections 1.0 to 1.6.
+  stronger "where to focus first" cues across sections 1.0 to 1.6.
 - Strengthened Chapter 2 guidance with reassurance, explicit failure modes, and a refactored
   2.4 macros page that separates always-load, interaction-specific, and legacy macros plus a safe
   removal checklist, and added a PopUp warning to 2.5.
 - Expanded Chapter 2.4 with science-native contexts, grading helpers, and visual tools while
   keeping the minimal macro set and safe removal checklist front and center.
-- Added a Chapter 7 row to the Chapter 1 index “Where to start today” table for local debugging.
+- Added a Chapter 7 row to the Chapter 1 index "Where to start today" table for local debugging.
 - Added instructor-focused reassurance and guardrails across Chapter 3 pages (PGML intro, blanks,
   lists, tables, layout controls, and command substitution) plus a clarity-first wrap-up on the
   chapter index.
-- Added Chapter 3 “Use this when” guidance and short “Common failure and fix” micro examples,
+- Added Chapter 3 "Use this when" guidance and short "Common failure and fix" micro examples,
   plus instructor-facing additions for PGML notation, text answers, lists, tables, layout, and
   command substitution.
 - Added instructor-facing decision support and common failure guidance across Chapter 5 question
@@ -56,7 +62,7 @@
 - Updated the HTML lint checker to allow external links while still flagging internal or
   relative links.
 - Expanded Chapter 7 with instructor-facing guidance: a local-vs-ADAPT decision table and
-  prerequisites in 7.0, a first-run checklist plus “what to record” table and done criteria in
+  prerequisites in 7.0, a first-run checklist plus "what to record" table and done criteria in
   7.1, and triage steps with common-failure patterns and a debugging note template in 7.2.
 - Expanded the README external resources list with official OpenWeBWorK PG sample example links
   used in Chapter 5.

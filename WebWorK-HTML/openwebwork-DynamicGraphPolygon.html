@@ -63,9 +63,9 @@ loadMacros('PGstandard.pl', 'PGML.pl', 'PGtikz.pl', 'PGcourse.pl');
 							<path fill-rule="evenodd" d="M10 1.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1Zm-5 0A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5v-1Zm-2 0h1v1A2.5 2.5 0 0 0 6.5 5h3A2.5 2.5 0 0 0 12 2.5v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2Z"></path>
 						</svg>
 					</button>
-					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="ͼb">DOCUMENT</span>();
+					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="(c)b">DOCUMENT</span>();
 
-<span class="ͼb">loadMacros</span>(<span class="ͼe">'PGstandard.pl'</span>, <span class="ͼe">'PGML.pl'</span>, <span class="ͼe">'PGtikz.pl'</span>, <span class="ͼe">'PGcourse.pl'</span>);
+<span class="(c)b">loadMacros</span>(<span class="(c)e">'PGstandard.pl'</span>, <span class="(c)e">'PGML.pl'</span>, <span class="(c)e">'PGtikz.pl'</span>, <span class="(c)e">'PGcourse.pl'</span>);
 </pre>
 				</div>
 				<div class="explanation preamble col-sm-12 col-md-6 order-md-last order-first p-3 border border-dark">
@@ -146,71 +146,71 @@ $graph3AltText = &quot;A circle of radius 3 centered at ($x, $y).&quot;;
 							<path fill-rule="evenodd" d="M10 1.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1Zm-5 0A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5v-1Zm-2 0h1v1A2.5 2.5 0 0 0 6.5 5h3A2.5 2.5 0 0 0 12 2.5v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2Z"></path>
 						</svg>
 					</button>
-					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="ͼh">$plot_setup</span> = <span class="ͼe">qq</span><span class="ͼe">/</span>
-<span class="ͼe">\tikzset{&gt;={Stealth[scale = 1.5]}}</span>
-<span class="ͼe">\filldraw[</span>
-<span class="ͼe">    draw = LightBlue,</span>
-<span class="ͼe">    fill = white,</span>
-<span class="ͼe">    rounded corners = 10pt,</span>
-<span class="ͼe">    thick,</span>
-<span class="ͼe">    use as bounding box</span>
-<span class="ͼe">] (-5, 5) rectangle (5, -5);</span>
-<span class="ͼe">\draw[lightgray, dashed] (-5, -5) grid (5, 5);</span>
-<span class="ͼe">\draw[-&gt;] (-5, 0) -- (5, 0) node[below left] {\(x\)};</span>
-<span class="ͼe">\foreach \x in {-4, ..., -1, 1, 2, ..., 4} \draw (\x, -4.5) node {\(\x\)};</span>
-<span class="ͼe">\draw[-&gt;] (0, -5) -- (0, 5) node[below right] {\(y\)};</span>
-<span class="ͼe">\foreach \y in {-4, ..., -1, 1, 2, ..., 4} \draw (-4.5, \y) node {\(\y\)};</span>
-<span class="ͼe">/</span>;
+					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="(c)h">$plot_setup</span> = <span class="(c)e">qq</span><span class="(c)e">/</span>
+<span class="(c)e">\tikzset{&gt;={Stealth[scale = 1.5]}}</span>
+<span class="(c)e">\filldraw[</span>
+<span class="(c)e">    draw = LightBlue,</span>
+<span class="(c)e">    fill = white,</span>
+<span class="(c)e">    rounded corners = 10pt,</span>
+<span class="(c)e">    thick,</span>
+<span class="(c)e">    use as bounding box</span>
+<span class="(c)e">] (-5, 5) rectangle (5, -5);</span>
+<span class="(c)e">\draw[lightgray, dashed] (-5, -5) grid (5, 5);</span>
+<span class="(c)e">\draw[-&gt;] (-5, 0) -- (5, 0) node[below left] {\(x\)};</span>
+<span class="(c)e">\foreach \x in {-4, ..., -1, 1, 2, ..., 4} \draw (\x, -4.5) node {\(\x\)};</span>
+<span class="(c)e">\draw[-&gt;] (0, -5) -- (0, 5) node[below right] {\(y\)};</span>
+<span class="(c)e">\foreach \y in {-4, ..., -1, 1, 2, ..., 4} \draw (-4.5, \y) node {\(\y\)};</span>
+<span class="(c)e">/</span>;
 
-<span class="ͼo"># The vertices of the triangle chosen randomly will be ($x0, $y0), ($x1, $y0)</span>
-<span class="ͼo"># and ($x0, $y1).</span>
-<span class="ͼh">$x0</span> = <span class="ͼb">random</span>(-<span class="ͼd">3</span>, -<span class="ͼd">1</span>);
-<span class="ͼh">$x1</span> = <span class="ͼb">random</span>( <span class="ͼd">1</span>,  <span class="ͼd">3</span>);
-<span class="ͼh">$y0</span> = <span class="ͼb">random</span>(-<span class="ͼd">3</span>, -<span class="ͼd">1</span>);
-<span class="ͼh">$y1</span> = <span class="ͼb">random</span>( <span class="ͼd">1</span>,  <span class="ͼd">3</span>);
+<span class="(c)o"># The vertices of the triangle chosen randomly will be ($x0, $y0), ($x1, $y0)</span>
+<span class="(c)o"># and ($x0, $y1).</span>
+<span class="(c)h">$x0</span> = <span class="(c)b">random</span>(-<span class="(c)d">3</span>, -<span class="(c)d">1</span>);
+<span class="(c)h">$x1</span> = <span class="(c)b">random</span>( <span class="(c)d">1</span>,  <span class="(c)d">3</span>);
+<span class="(c)h">$y0</span> = <span class="(c)b">random</span>(-<span class="(c)d">3</span>, -<span class="(c)d">1</span>);
+<span class="(c)h">$y1</span> = <span class="(c)b">random</span>( <span class="(c)d">1</span>,  <span class="(c)d">3</span>);
 
-<span class="ͼh">$graph1</span> = <span class="ͼb">createTikZImage</span>();
-<span class="ͼh">$graph1</span>-&gt;<span class="ͼg">tikzLibraries</span>(<span class="ͼe">'arrows.meta'</span>);
-<span class="ͼh">$graph1</span>-&gt;<span class="ͼe">BEGIN_TIKZ</span>
-<span class="ͼh">$plot_setup</span><span class="ͼe">;</span>
-<span class="ͼe">\filldraw[very thick, fill = LightGreen, draw = DarkGreen, opacity = 0.5]</span>
-<span class="ͼe">    (</span><span class="ͼh">$x0</span><span class="ͼe">, </span><span class="ͼh">$y0</span><span class="ͼe">) -- (</span><span class="ͼh">$x1</span><span class="ͼe">, </span><span class="ͼh">$y0</span><span class="ͼe">) -- (</span><span class="ͼh">$x0</span><span class="ͼe">, </span><span class="ͼh">$y1</span><span class="ͼe">) -- cycle;</span>
-<span class="ͼe">END_TIKZ</span>
+<span class="(c)h">$graph1</span> = <span class="(c)b">createTikZImage</span>();
+<span class="(c)h">$graph1</span>-&gt;<span class="(c)g">tikzLibraries</span>(<span class="(c)e">'arrows.meta'</span>);
+<span class="(c)h">$graph1</span>-&gt;<span class="(c)e">BEGIN_TIKZ</span>
+<span class="(c)h">$plot_setup</span><span class="(c)e">;</span>
+<span class="(c)e">\filldraw[very thick, fill = LightGreen, draw = DarkGreen, opacity = 0.5]</span>
+<span class="(c)e">    (</span><span class="(c)h">$x0</span><span class="(c)e">, </span><span class="(c)h">$y0</span><span class="(c)e">) -- (</span><span class="(c)h">$x1</span><span class="(c)e">, </span><span class="(c)h">$y0</span><span class="(c)e">) -- (</span><span class="(c)h">$x0</span><span class="(c)e">, </span><span class="(c)h">$y1</span><span class="(c)e">) -- cycle;</span>
+<span class="(c)e">END_TIKZ</span>
 
-<span class="ͼh">$graph1AltText</span> =
-    <span class="ͼe">"A filled triangle with vertices at (</span><span class="ͼh">$x0</span><span class="ͼe">, </span><span class="ͼh">$y0</span><span class="ͼe">), (</span><span class="ͼh">$x1</span><span class="ͼe">, </span><span class="ͼh">$y0</span><span class="ͼe">), and (</span><span class="ͼh">$x0</span><span class="ͼe">, </span><span class="ͼh">$y1</span><span class="ͼe">)."</span>;
+<span class="(c)h">$graph1AltText</span> =
+    <span class="(c)e">"A filled triangle with vertices at (</span><span class="(c)h">$x0</span><span class="(c)e">, </span><span class="(c)h">$y0</span><span class="(c)e">), (</span><span class="(c)h">$x1</span><span class="(c)e">, </span><span class="(c)h">$y0</span><span class="(c)e">), and (</span><span class="(c)h">$x0</span><span class="(c)e">, </span><span class="(c)h">$y1</span><span class="(c)e">)."</span>;
 
-<span class="ͼo"># A plot of 1+sqrt(x) and shade underneath the graph.</span>
+<span class="(c)o"># A plot of 1+sqrt(x) and shade underneath the graph.</span>
 
-<span class="ͼh">$graph2</span> = <span class="ͼb">createTikZImage</span>();
-<span class="ͼh">$graph2</span>-&gt;<span class="ͼg">tikzLibraries</span>(<span class="ͼe">'arrows.meta'</span>);
-<span class="ͼh">$graph2</span>-&gt;<span class="ͼe">BEGIN_TIKZ</span>
-<span class="ͼh">$plot_setup</span><span class="ͼe">;</span>
-<span class="ͼe">\filldraw[fill = LightBlue, opacity = 0.5, draw = blue]</span>
-<span class="ͼe">    (1,0) -- plot[domain = 1:4] (\x, {1 + sqrt(\x)}) -- (4,0) -- cycle;</span>
-<span class="ͼe">\draw[very thick, DarkBlue]</span>
-<span class="ͼe">    plot [samples = 100, domain = 0:5, smooth] (\x, {1 + sqrt(\x)});</span>
-<span class="ͼe">END_TIKZ</span>
+<span class="(c)h">$graph2</span> = <span class="(c)b">createTikZImage</span>();
+<span class="(c)h">$graph2</span>-&gt;<span class="(c)g">tikzLibraries</span>(<span class="(c)e">'arrows.meta'</span>);
+<span class="(c)h">$graph2</span>-&gt;<span class="(c)e">BEGIN_TIKZ</span>
+<span class="(c)h">$plot_setup</span><span class="(c)e">;</span>
+<span class="(c)e">\filldraw[fill = LightBlue, opacity = 0.5, draw = blue]</span>
+<span class="(c)e">    (1,0) -- plot[domain = 1:4] (\x, {1 + sqrt(\x)}) -- (4,0) -- cycle;</span>
+<span class="(c)e">\draw[very thick, DarkBlue]</span>
+<span class="(c)e">    plot [samples = 100, domain = 0:5, smooth] (\x, {1 + sqrt(\x)});</span>
+<span class="(c)e">END_TIKZ</span>
 
-<span class="ͼh">$graph2AltText</span> =
-    <span class="ͼe">'The graph of a curve that starts at (0, 1) and increases to the right, '</span>
-    . <span class="ͼe">'increasing sharply at first, and less so as it continues to the right. '</span>
-    . <span class="ͼe">'The region above the x-axis and below the curve between '</span>
-    . <span class="ͼe">'x = 1 and x = 4 is filled.'</span>;
+<span class="(c)h">$graph2AltText</span> =
+    <span class="(c)e">'The graph of a curve that starts at (0, 1) and increases to the right, '</span>
+    . <span class="(c)e">'increasing sharply at first, and less so as it continues to the right. '</span>
+    . <span class="(c)e">'The region above the x-axis and below the curve between '</span>
+    . <span class="(c)e">'x = 1 and x = 4 is filled.'</span>;
 
-<span class="ͼo"># A circle of radius 3 centered at ($x, $y).</span>
-<span class="ͼh">$x</span> = <span class="ͼb">random</span>(-<span class="ͼd">2</span>, <span class="ͼd">2</span>);
-<span class="ͼh">$y</span> = <span class="ͼb">random</span>(-<span class="ͼd">2</span>, <span class="ͼd">2</span>);
+<span class="(c)o"># A circle of radius 3 centered at ($x, $y).</span>
+<span class="(c)h">$x</span> = <span class="(c)b">random</span>(-<span class="(c)d">2</span>, <span class="(c)d">2</span>);
+<span class="(c)h">$y</span> = <span class="(c)b">random</span>(-<span class="(c)d">2</span>, <span class="(c)d">2</span>);
 
-<span class="ͼh">$graph3</span> = <span class="ͼb">createTikZImage</span>();
-<span class="ͼh">$graph3</span>-&gt;<span class="ͼg">tikzLibraries</span>(<span class="ͼe">'arrows.meta'</span>);
-<span class="ͼh">$graph3</span>-&gt;<span class="ͼe">BEGIN_TIKZ</span>
-<span class="ͼh">$plot_setup</span><span class="ͼe">;</span>
-<span class="ͼe">\filldraw[very thick, fill = LightSalmon, opacity = 0.5, draw = DarkOrange]</span>
-<span class="ͼe">    (</span><span class="ͼh">$x</span><span class="ͼe">, </span><span class="ͼh">$y</span><span class="ͼe">) circle[radius = 3];</span>
-<span class="ͼe">END_TIKZ</span>
+<span class="(c)h">$graph3</span> = <span class="(c)b">createTikZImage</span>();
+<span class="(c)h">$graph3</span>-&gt;<span class="(c)g">tikzLibraries</span>(<span class="(c)e">'arrows.meta'</span>);
+<span class="(c)h">$graph3</span>-&gt;<span class="(c)e">BEGIN_TIKZ</span>
+<span class="(c)h">$plot_setup</span><span class="(c)e">;</span>
+<span class="(c)e">\filldraw[very thick, fill = LightSalmon, opacity = 0.5, draw = DarkOrange]</span>
+<span class="(c)e">    (</span><span class="(c)h">$x</span><span class="(c)e">, </span><span class="(c)h">$y</span><span class="(c)e">) circle[radius = 3];</span>
+<span class="(c)e">END_TIKZ</span>
 
-<span class="ͼh">$graph3AltText</span> = <span class="ͼe">"A circle of radius 3 centered at (</span><span class="ͼh">$x</span><span class="ͼe">, </span><span class="ͼh">$y</span><span class="ͼe">)."</span>;
+<span class="(c)h">$graph3AltText</span> = <span class="(c)e">"A circle of radius 3 centered at (</span><span class="(c)h">$x</span><span class="(c)e">, </span><span class="(c)h">$y</span><span class="(c)e">)."</span>;
 </pre>
 				</div>
 				<div class="explanation setup col-sm-12 col-md-6 order-md-last order-first p-3 border border-dark">
@@ -250,13 +250,13 @@ END_PGML
 							<path fill-rule="evenodd" d="M10 1.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1Zm-5 0A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5v-1Zm-2 0h1v1A2.5 2.5 0 0 0 6.5 5h3A2.5 2.5 0 0 0 12 2.5v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2Z"></path>
 						</svg>
 					</button>
-					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="ͼb">BEGIN_PGML</span>
-<span class="ͼn">[!</span><span class="ͼn">[</span><span class="ͼh">$graph1AltText</span><span class="ͼn">]</span><span class="ͼn">!]</span><span class="ͼn">{</span><span class="ͼh">$graph1</span><span class="ͼn">}</span><span class="ͼn">{</span><span class="ͼd">400</span><span class="ͼn">}</span>
+					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="(c)b">BEGIN_PGML</span>
+<span class="(c)n">[!</span><span class="(c)n">[</span><span class="(c)h">$graph1AltText</span><span class="(c)n">]</span><span class="(c)n">!]</span><span class="(c)n">{</span><span class="(c)h">$graph1</span><span class="(c)n">}</span><span class="(c)n">{</span><span class="(c)d">400</span><span class="(c)n">}</span>
 
-<span class="ͼn">[!</span><span class="ͼn">[</span><span class="ͼh">$graph2AltText</span><span class="ͼn">]</span><span class="ͼn">!]</span><span class="ͼn">{</span><span class="ͼh">$graph2</span><span class="ͼn">}</span><span class="ͼn">{</span><span class="ͼd">400</span><span class="ͼn">}</span>
+<span class="(c)n">[!</span><span class="(c)n">[</span><span class="(c)h">$graph2AltText</span><span class="(c)n">]</span><span class="(c)n">!]</span><span class="(c)n">{</span><span class="(c)h">$graph2</span><span class="(c)n">}</span><span class="(c)n">{</span><span class="(c)d">400</span><span class="(c)n">}</span>
 
-<span class="ͼn">[!</span><span class="ͼn">[</span><span class="ͼh">$graph3AltText</span><span class="ͼn">]</span><span class="ͼn">!]</span><span class="ͼn">{</span><span class="ͼh">$graph3</span><span class="ͼn">}</span><span class="ͼn">{</span><span class="ͼd">400</span><span class="ͼn">}</span>
-<span class="ͼb">END_PGML</span>
+<span class="(c)n">[!</span><span class="(c)n">[</span><span class="(c)h">$graph3AltText</span><span class="(c)n">]</span><span class="(c)n">!]</span><span class="(c)n">{</span><span class="(c)h">$graph3</span><span class="(c)n">}</span><span class="(c)n">{</span><span class="(c)d">400</span><span class="(c)n">}</span>
+<span class="(c)b">END_PGML</span>
 </pre>
 				</div>
 				<div class="explanation statement col-sm-12 col-md-6 order-md-last order-first p-3 border border-dark">
@@ -278,11 +278,11 @@ ENDDOCUMENT();" aria-label="copy to clipboard">
 							<path fill-rule="evenodd" d="M10 1.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1Zm-5 0A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5v-1Zm-2 0h1v1A2.5 2.5 0 0 0 6.5 5h3A2.5 2.5 0 0 0 12 2.5v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2Z"></path>
 						</svg>
 					</button>
-					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="ͼb">BEGIN_PGML_SOLUTION</span>
+					<pre class="PGCodeMirror m-0 h-100 p-3 border border-secondary overflow-x-scroll"><span class="(c)b">BEGIN_PGML_SOLUTION</span>
 Solution explanation goes here.
-<span class="ͼb">END_PGML_SOLUTION</span>
+<span class="(c)b">END_PGML_SOLUTION</span>
 
-<span class="ͼb">ENDDOCUMENT</span><span class="ͼo">();</span></pre>
+<span class="(c)b">ENDDOCUMENT</span><span class="(c)o">();</span></pre>
 				</div>
 				<div class="explanation solution col-sm-12 col-md-6 order-md-last order-first p-3 border border-dark">
 					<p><b>Solution</b></p>
