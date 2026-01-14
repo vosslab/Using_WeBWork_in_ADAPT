@@ -1,6 +1,9 @@
 # Changelog
 
 ## 2026-01-14
+- Added `tools/webwork_simple_lint.py` for a lightweight static lint pass on .pg files (macro coverage, balanced markers, PGML blank assignment hints).
+- Added `tools/extract_textbook_pre_blocks.py` to extract `<pre>` blocks into .pg files and optionally run the simple lint pass.
+- Added `tools/textbook_code_block_validator.py` to scan `<pre>` blocks for unmatched PG/PGML markers and likely missing macro loads.
 - Fixed PGML syntax in Chapter 4 Solution examples: changed math delimiters `` [`$radio->correct_ans`] ``
   to variable substitution `[$radio->correct_ans]` in `4.1-Full_file.html` and `4.5-Solution.html`.
 - Added "Math formatting vs variable substitution" section to `3.1-Introduction_to_PGML.html` explaining
